@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Aeronautics\Mustang</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/style.less" type="text/less">
+    <script src="js/less-1.1.3.min.js" type="text/javascript" ></script>
+  </head>
+  <body>
+    <article>
+      <hgroup>
+        <h1>Aeronautics\Mustang</h1>
+        <h2>Simple, responsive, semantic HTML/CSS components with progressive enhancement</h2>
+      </hgroup>
+      <p>Featuring:</p>
+      <ul>
+        <li>LESS CSS pre-processor</li>
+        <li>normalize.css CSS reset</li>
+        <li>semantic.gs grid</li>
+        <li>FontAwesome icons</li>
+        <li>Twitter Bootstrap and Ghiaweb inspiration</li>
+      </ul>
+        <h2>Basics</h2>
+        <p>Include <samp>sytles/mustang.less</samp> in your LESS file. You should be ready to go. A better, modular 
+          way of using it is already on its way.</p>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <hgroup>
+        <h2>Sample hgroup</h2>
+        <h3>Works with any consecutive headings (for example, h2+h3)</h3>
+      </hgroup>
+      <h2>Text</h2>
+      <p>Standard text with <strong>strong</strong>, <mark>marked</mark> and <em>emphasis</em> text. Abbreviations such as <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+      <h2>Quotes</h2>
+      <blockquote>
+        A quote.
+      </blockquote>
+      <p>Another quote sample:</p>
+      <blockquote>
+        A quote with source. <cite>Alexandre Gaigalas</cite>
+      </blockquote>
+      <h2>Utils</h2>
+      <p>An <ins>inserted</ins> and a <del>deleted</del> text.</p>
+      <p>Code utilities for <code>$snippets</code>, <samp>["Samples"]</samp>, <var>variables</var> and <kbd>instructions</kbd>.</p>.
+      <h2>Unordered Lists</h2>
+      <ul>
+        <li>A simple</li>
+        <li>Nested
+          <ul>
+            <li>Unordered</li>
+            <li>List</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Ordered Lists</h2>
+      <ol>
+        <li>A simple</li>
+        <li>Nested
+          <ol>
+            <li><strong>Ordered</strong></li>
+            <li>List</li>
+          </ol>
+        </li>
+      </ol>
+      <h2>Definition Lists</h2>
+      <dl>
+        <dt>A definition list</dt>
+          <dd>With a single definition</dd>
+        <dt>This term</dt>
+          <dd>Has</dd>
+          <dd>Multiple</dd>
+          <dd>Definitions</dd>
+      </dl>
+      <h2>Mixing Lists</h2>
+      <ul>
+        <li>Multiple lists inside
+          <dl>
+            <dt>Some term</dt>
+              <dd>
+                <ol>
+                  <li>Definition part A</li>
+                  <li>Definition part B</li>
+                  <li>Definition part C</li>
+                </ol>
+              </dd>
+          </dl>
+          <li>Another list item</li>
+      </ul>
+      <h2>Code Blocks</h2>
+      <pre><code>@columns: 12;
+@total-width: 100%;</code></pre>
+      <table>
+        <caption><h2>Table Sample</h2></caption>
+        <thead>
+          <tr>
+            <th>Foo</th>
+            <th>Bar</th>
+            <th>Baz</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>Foo</th>
+            <th>Bar</th>
+            <th>Baz</th>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>Lorem</td>
+            <td>Ipsum</td>
+            <td>Dolor</td>
+          </tr>
+          <tr>
+            <td colspan="2">colspan=2 Lorem Ipsum</td>
+            <td>Dolor</td>
+          </tr>
+          <tr>
+            <td>Dolor</td>
+            <td>Sit</td>
+            <td>Amet</td>
+          </tr>
+        </tbody>
+      </table>
+      <form method="get" action="#">
+      <fieldset>
+        <legend>Sample Form</legend>
+        <fieldset>
+          <legend>Driver</legend>
+          <label><abbr title="Social Security">SS</abbr> Number<input type="text" size="12"><button type="button">Search</button></label>
+          <label>Full Name<input type="text" size="25"></label>
+          <label>Birthday<input type="date"></label>
+          <label>License<input type="text" size="11"></label>
+          <label>Category
+            <select>
+              <option>E</option>
+              <option>D</option>
+            </select>
+          </label>
+          <label>Mother's Full Name<input type="text" size="25"></label>
+          <label>Father's Full Name<input type="text" size="25"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Vehicle</legend>
+          <label>Plate<input type="text" size="8"><button type="button">Search</button></label>
+          <label>Type
+            <select>
+              <option>Truck</option>
+              <option>Car</option>
+            </select>
+          </label>
+          <label>Brand
+            <select>
+              <option>Scania</option>
+              <option>Volvo</option>
+            </select>
+          </label>
+          <label>Model
+            <select>
+              <option>101H</option>
+              <option>102H</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Route Start</legend>
+          <label>Country
+            <select>
+              <option>Brazil</option>
+            </select>
+          </label>
+          <label>State/Province
+            <select>
+              <option>São Paulo</option>
+            </select>
+          </label>
+          <label>City/Region
+            <select>
+              <option>São Paulo</option>
+            </select>
+          </label>
+          <label>Address Line 1<input type="text" size="22"></label>
+          <label>Address Line 2<input type="text" size="22"></label>
+        </fieldset>
+          <button type="button">Add New Deliver</button>
+        <fieldset>
+          <legend>Route End</legend>
+          <label>Country
+            <select>
+              <option>Brazil</option>
+            </select>
+          </label>
+          <label>State/Province
+            <select>
+              <option>São Paulo</option>
+            </select>
+          </label>
+          <label>City/Region
+            <select>
+              <option>São Paulo</option>
+            </select>
+          </label>
+          <label>Address Line 1<input type="text" size="22"></label>
+          <label>Address Line 2<input type="text" size="22"></label>
+        </fieldset>
+      </fieldset>
+      </form>
+    </article>
+  </body>
+</html>
