@@ -1,0 +1,86 @@
+area(p1, p2=none, p3=none, p4=none, p5=none, p6=none)
+  if 'unit' != typeof(p1) and 'unit' != typeof(p3)
+    area-{p1} p2
+    area-{p3} p4 p5
+  else if 'unit' != typeof(p1) and 'unit' != typeof(p4)
+    area-{p1} p2 p3
+    area-{p4} p5 p6
+  else if 'unit' == typeof(p1) and 'unit' == typeof(p2)
+    area-square p1 p2
+  else if 'unit' == typeof(p1)
+    area-square p1
+
+area-square(square-or-width, height=none)
+  area = bar
+  if 'none' == height
+    width square-or-width
+    height square-or-width
+  else
+    width square-or-width
+    height height
+
+area-top(start-or-height, end=none)
+  if 'none' == end
+    height start-or-height
+    top 0
+  else
+    top start-or-height
+    height end - start-or-height
+
+area-right(start-or-width, end=none)
+  if 'none' == end
+    width start-or-width
+    right 0
+  else
+    right start-or-width
+    width end - start-or-width
+
+area-bottom(start-or-height, end=none)
+  if 'none' == end
+    height start-or-height
+    bottom 0
+  else
+    bottom start-or-height
+    height end - start-or-height
+
+area-left(start-or-width, end=none)
+  if 'none' == end
+    width start-or-width
+    left 0
+  else
+    left start-or-width
+    width end - start-or-width
+
+header-size = 14%
+nav-size = 18%
+html
+  area 100%
+body
+  position relative
+  area 50em 100%
+  margin 0 auto
+  font 14px Helvetica, Arial, FreeSans, sans-serif
+  background #EEE
+
+header
+  text-align center
+  area 100% header-size
+  letter-spacing -0.08em
+  border-bottom 0.02em solid #AAA
+
+nav
+  area left nav-size top header-size 100%
+
+article
+  area left nav-size 100% top header-size 100%
+
+header, nav, article, footer
+  position absolute
+
+header, a, body
+  color #444
+
+pre
+  padding 1em
+  background #DDD
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang=en-US>
+<meta charset=utf-8>
+<title>Aeronautics\Mustang</title>
+<link rel=stylesheet href=styles/style.css>
+<header id="#about">
+  <hgroup>
+    <h1>Aeronautics\Mustang</h1>
+    <h2>A reusable Stylus CSS Framework</h2>
+  </hgroup>
+</header>
+<article>
+  <p>Aeronautics\Mustang is a <em title="Work in progress!">not yet</em> full featured, all-optional, modular CSS framework
+    written in Stylus. This page is styled by this:</p>
+
+  <pre><code>header-size = 14%
+nav-size = 18%
+html
+  area 100%
+body
+  position relative
+  area 50em 100%
+  margin 0 auto
+  font 14px Helvetica, Arial, FreeSans, sans-serif
+  background #EEE
+
+header
+  text-align center
+  area 100% header-size
+  letter-spacing -0.08em
+  border-bottom 0.02em solid #AAA
+
+nav
+  area left nav-size top header-size 100%
+
+article
+  area left nav-size 100% top header-size 100%
+
+header, nav, article, footer
+  position absolute
+
+header, a, body
+  color #444
+
+pre
+  padding 1em
+  background #DDD
+
+</code></pre>
+  <p>See the <a href="styles/style.css">generated CSS file</a>. Mustang is about 20% shorter and much more easier to maintain, all those percentages are managed by us.</p>
+  <p>Currently, only <strong>area</strong> is implemented for managing absolutely positioned elements. We're currently working on our roadmap:</p>
+  <ul>
+    <li>Let area management deal with mixed absolute and relative positions</li>
+    <li>Granular and global reset/normalize mixins</li>
+    <li>Parametrized color and font themes</li>
+    <li>Semantic grid based on proportions inspired by semantic.gs</li>
+  </ul>
+  <p>Area usage is:</p>
+  <ul>
+    <li>area <em>left|right</em> x1 x2 <em>top|bottom</em> y1 y2</li>
+    <li>area x1 x2 y1 y2</li>
+    <li>Consecutive x's and y's can be contracted like <em>area left 70%</em>, which is equivalent to <em>area left 0 70%</em></li>
+  </ul>
+</article>
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ul>
+</nav>

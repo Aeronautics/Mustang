@@ -1,0 +1,46 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  width: 50em;
+  height: 100%;
+  margin: 0 auto;
+  font: 14px Helvetica, Arial, FreeSans, sans-serif;
+  background: #eee;
+}
+header {
+  text-align: center;
+  width: 100%;
+  height: 14%;
+  letter-spacing: -0.08em;
+  border-bottom: 0.02em solid #aaa;
+}
+nav {
+  width: 18%;
+  left: 0;
+  top: 14%;
+  height: 86%;
+}
+article {
+  left: 18%;
+  width: 82%;
+  top: 14%;
+  height: 86%;
+}
+header,
+nav,
+article,
+footer {
+  position: absolute;
+}
+header,
+a,
+body {
+  color: #444;
+}
+pre {
+  padding: 1em;
+  background: #ddd;
+}

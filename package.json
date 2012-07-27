@@ -1,0 +1,17 @@
+{
+  "author": "Alexandre Gaigalas <alexandre@gaigalas.net> (http://about.me/alganet)",
+  "name": "Aeronautics\\Mustang",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Aeronautics/Mustang.git"
+  },
+  "dependencies": {
+    "stylus": "*"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
