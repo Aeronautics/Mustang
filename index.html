@@ -3,70 +3,167 @@
 <meta charset=utf-8>
 <title>Aeronautics\Mustang</title>
 <link rel=stylesheet href=styles/style.css>
-<header id="#about">
+<header id="about">
   <hgroup>
     <h1>Aeronautics\Mustang</h1>
     <h2>A reusable Stylus CSS Framework</h2>
   </hgroup>
 </header>
 <article>
-  <p>Aeronautics\Mustang is a <em title="Work in progress!">not yet</em> full featured, all-optional, modular CSS framework
+  <p>Aeronautics\Mustang is a <em title="Work in progress!">not yet</em> fully featured, all-optional, modular CSS framework
     written in Stylus. This page is styled by this:</p>
-
-  <pre><code>header-size = 14%
-nav-size = 18%
-html
+<pre id="sample"><code>html
   area 100%
+
 body
-  position relative
-  area 50em 100%
-  margin 0 auto
-  font 14px Helvetica, Arial, FreeSans, sans-serif
+  area 55.5em 100%
+  position relative top center
+  font 14px Arial, Helvetica, FreeSans, sans-serif
   background #EEE
+  color #555
 
 header
-  text-align center
-  area 100% header-size
-  letter-spacing -0.08em
-  border-bottom 0.02em solid #AAA
+  area 100% 5.5em
 
-nav
-  area left nav-size top header-size 100%
+header, article h2
+  border-bottom 1px solid #CCC
 
 article
-  area left nav-size 100% top header-size 100%
+  width 12col 15col
 
-header, nav, article, footer
-  position absolute
+nav
+  margin 5gutter
+  width 3col 15col
 
-header, a, body
-  color #444
+ul
+  padding-left 1em
+
+li
+  padding-top 0.5em
+
+section
+  margin 0.35gutter
+  width 2col 4col
+
+header, h2, a
+  color darken(teal, 25%)
 
 pre
-  padding 1em
-  background #DDD
+  padding 0.5em
+  border 1px solid #CCC</code></pre>
 
+<h2>Reference</h2>
+<section>
+  <h3>area</h3>
+  <p>Simply combines width and height.</p>
+  <pre><code>body
+  area 60em
+    //width:  60em
+    //height: 60em
+  area 60em 70em
+    //width:  60em
+    //height: 70em</code></pre>
+</section>
+<section>
+  <h3>position absolute</h3>
+  <p>Beautifies the native <em>position</em> property.</p>
+  <pre><code>
+position absolute top left
+  //position: absolute
+  //top: 0
+  //left: 0
+position absolute bottom right
+  //position: absolute
+  //bottom: 0
+  //right: 0
+
+position absolute top left 1em 2em
+  //position: absolute
+  //bottom: 1em
+  //right: 2em</code></pre>
+</section>
+<section>
+  <h3>position relative</h3>
+  <p>Beautifies the native <em>position</em> property.</p>
+  <pre><code>
+position relative center
+  //position: relative
+  //margin: 0 auto
+position
+ relative left
+  //position: relative
+  //margin: 0 auto 0 0</code></pre>
+</section>
+
+<section>
+  <h3>width</h3>
+  <p>Makes the native <em>with</em> shine with the new <em>kind of units</em> <strong>col</strong> and <strong>gutter</strong> for CSS grids.</p>
+  <pre><code>half = 50%
+section
+  width 10% half
+    //10% of 50%
+    //width: 5%
+
+section
+  width 10% 50%
+    //10% of 50%
+    //width: 5%
+
+section
+  width 6col 12col
+    //Grid system model
+    //width: 50%
+    //float: left
+    //overflow: hidden
+    //display: inline
+
+section
+  margin 40gutter
+  width 6col 12col
+    //Grid system model
+    //width: 49% //around that
+    //margin: 0.5% //around that
+    //float: left
+    //overflow: hidden
+    //display: inline
 </code></pre>
-  <p>See the <a href="styles/style.css">generated CSS file</a>. Mustang is about 20% shorter and much more easier to maintain, all those percentages are managed by us.</p>
-  <p>Currently, only <strong>area</strong> is implemented for managing absolutely positioned elements. We're currently working on our roadmap:</p>
-  <ul>
-    <li>Let area management deal with mixed absolute and relative positions</li>
-    <li>Granular and global reset/normalize mixins</li>
-    <li>Parametrized color and font themes</li>
-    <li>Semantic grid based on proportions inspired by semantic.gs</li>
-  </ul>
-  <p>Area usage is:</p>
-  <ul>
-    <li>area <em>left|right</em> x1 x2 <em>top|bottom</em> y1 y2</li>
-    <li>area x1 x2 y1 y2</li>
-    <li>Consecutive x's and y's can be contracted like <em>area left 70%</em>, which is equivalent to <em>area left 0 70%</em></li>
-  </ul>
+</section>
 </article>
 <nav>
+  <h2>Shortcuts</h2>
   <ul>
     <li><a href="#about">About</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#sample">Sample</a></li>
     <li><a href="#reference">Reference</a></li>
   </ul>
+  <h2>Keywords</h2>
+  <p>mouseover items</p>
+  <ul>
+    <li title="area [side]; area [width] [height]">area</li>
+    <li title="position [absolute|relative]">position
+      <ul>
+        <li title="position absolute [top|bottom] [right|left] [w] [h]">absolute
+          <ul title="position absolute top left 10em 5em">
+            <li>top|bottom</li>
+            <li>left|right</li>
+          </ul>
+        </li>
+        <li title="position relative [left|right|center]">relative
+          <ul>
+            <li>left|right</li>
+            <li>center</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li title="margin 5 gutter">margin</li>
+    <ul>
+      <li title="margin 5 gutter"><em>5</em><strong>gutter</strong></li>
+    </ul>
+    <li title="width 3col 12col //uses margin as gutter">width</li>
+      <ul>
+        <li title="width 3col 12col //uses margin as gutter"><em>3</em><strong>col</strong> <em>12</em><strong>col</strong></li>
+      </ul>
+  </ul>
+
 </nav>

@@ -3,44 +3,56 @@ html {
   height: 100%;
 }
 body {
-  position: relative;
-  width: 50em;
+  width: 55.5em;
   height: 100%;
+  position: relative;
   margin: 0 auto;
-  font: 14px Helvetica, Arial, FreeSans, sans-serif;
+  font: 14px Arial, Helvetica, FreeSans, sans-serif;
   background: #eee;
+  color: #555;
 }
 header {
-  text-align: center;
   width: 100%;
-  height: 14%;
-  letter-spacing: -0.08em;
-  border-bottom: 0.02em solid #aaa;
+  height: 5.5em;
 }
-nav {
-  width: 18%;
-  left: 0;
-  top: 14%;
-  height: 86%;
+header,
+article h2 {
+  border-bottom: 1px solid #ccc;
 }
 article {
-  left: 18%;
-  width: 82%;
-  top: 14%;
-  height: 86%;
+  float: left;
+  display: inline;
+  overflow: hidden;
+  width: 80%;
+}
+nav {
+  margin: 5 gutter;
+  float: left;
+  display: inline;
+  overflow: hidden;
+  width: 15.238095238095237%;
+  margin: 0 2.380952380952381%;
+}
+ul {
+  padding-left: 1em;
+}
+li {
+  padding-top: 0.5em;
+}
+section {
+  margin: 0.35 gutter;
+  float: left;
+  display: inline;
+  overflow: hidden;
+  width: 46.276595744680854%;
+  margin: 0 1.8617021276595744%;
 }
 header,
-nav,
-article,
-footer {
-  position: absolute;
-}
-header,
-a,
-body {
-  color: #444;
+h2,
+a {
+  color: #006060;
 }
 pre {
-  padding: 1em;
-  background: #ddd;
+  padding: 0.5em;
+  border: 1px solid #ccc;
 }

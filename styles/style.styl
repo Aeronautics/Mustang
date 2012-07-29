@@ -1,86 +1,94 @@
-area(p1, p2=none, p3=none, p4=none, p5=none, p6=none)
-  if 'unit' != typeof(p1) and 'unit' != typeof(p3)
-    area-{p1} p2
-    area-{p3} p4 p5
-  else if 'unit' != typeof(p1) and 'unit' != typeof(p4)
-    area-{p1} p2 p3
-    area-{p4} p5 p6
-  else if 'unit' == typeof(p1) and 'unit' == typeof(p2)
-    area-square p1 p2
-  else if 'unit' == typeof(p1)
-    area-square p1
-
-area-square(square-or-width, height=none)
-  area = bar
-  if 'none' == height
-    width square-or-width
-    height square-or-width
+area(side, height=none)
+  if height == none
+    width side
+    height side
   else
-    width square-or-width
+    width side
     height height
 
-area-top(start-or-height, end=none)
-  if 'none' == end
-    height start-or-height
-    top 0
-  else
-    top start-or-height
-    height end - start-or-height
+position(spec, y=none, x=none, h=none, w=none)
+  position spec
+  if spec == relative
+    if x == center
+      margin 0 auto
+    else if x == left
+      margin 0 auto 0 0
+    else if x == right
+      margin 0 0 0 auto
+  else if spec == absolute
+    if y != none
+      if h != none
+        {y} h
+      else
+        {y} 0
+    if x != none
+      if w != none
+        {x} w
+      else
+        {x} 0
 
-area-right(start-or-width, end=none)
-  if 'none' == end
-    width start-or-width
-    right 0
-  else
-    right start-or-width
-    width end - start-or-width
+width()
+  argc = length(arguments)
+  if argc == 1
+    width arguments[0]
+  if argc == 2
+    width (arguments[1] / arguments[0])
+  if argc == 3
+    width (arguments[2] / arguments[1] / arguments[0])
+  if argc == 4 and arguments[1] == col and arguments[3] == col
+    float left
+    display inline
+    overflow hidden
+    spacing-width = @margin
+    if spacing-width[1] == gutter
+      spacing-width = spacing-width / 2
+      grid-columns = arguments[2]
+      columns = arguments[0]
+      column-width = 1 + spacing-width
+      grid-width =  column-width * grid-columns
+      width ( 100% * ( ( column-width * columns ) - spacing-width) / grid-width )
+      margin 0 100% * ( ( spacing-width * 0.5 ) / grid-width)
+    else
+      grid-width = arguments[2]
+      width 100% * ( arguments[0] / grid-width )
 
-area-bottom(start-or-height, end=none)
-  if 'none' == end
-    height start-or-height
-    bottom 0
-  else
-    bottom start-or-height
-    height end - start-or-height
-
-area-left(start-or-width, end=none)
-  if 'none' == end
-    width start-or-width
-    left 0
-  else
-    left start-or-width
-    width end - start-or-width
-
-header-size = 14%
-nav-size = 18%
 html
   area 100%
+
 body
-  position relative
-  area 50em 100%
-  margin 0 auto
-  font 14px Helvetica, Arial, FreeSans, sans-serif
+  area 55.5em 100%
+  position relative top center
+  font 14px Arial, Helvetica, FreeSans, sans-serif
   background #EEE
+  color #555
 
 header
-  text-align center
-  area 100% header-size
-  letter-spacing -0.08em
-  border-bottom 0.02em solid #AAA
+  area 100% 5.5em
 
-nav
-  area left nav-size top header-size 100%
+header, article h2
+  border-bottom 1px solid #CCC
 
 article
-  area left nav-size 100% top header-size 100%
+  width 12col 15col
 
-header, nav, article, footer
-  position absolute
+nav
+  margin 5gutter
+  width 3col 15col
 
-header, a, body
-  color #444
+ul
+  padding-left 1em
+
+li
+  padding-top 0.5em
+
+section
+  margin 0.35gutter
+  width 2col 4col
+
+header, h2, a
+  color darken(teal, 25%)
 
 pre
-  padding 1em
-  background #DDD
+  padding 0.5em
+  border 1px solid #CCC
 
