@@ -11,29 +11,29 @@
 </header>
 <article>
   <p>Let's start by eating our own dogfood. This page is styled only by these rules:</p>
-<pre id="sample"><code>@import 'mustang.styl'
+<pre id="sample"><code><strong>@import 'mustang.styl'
 @import 'prefixes/all.styl'
 @import 'uses/normal.styl'
 
 {
   use: normal, fonts spacing, html h1 h2 p ul li;
   use: normal, html5-compat, sectioning;
-}
+}</strong>
 body {
   area: 65.5em 100%;
-  position: relative top center;
+  position: <strong>relative top center</strong>;
 }
 article,
 nav,
 section {
-  position: grid;
+  position: <strong>grid</strong>;
 }
 article {
-  width: 8col;
+  width: <strong>8col</strong>;
   float: right;
 }
 nav {
-  width: 4col;
+  width: <strong>4col</strong>;
 }
 ul {
   padding: 0 1em;
@@ -43,11 +43,11 @@ li {
   margin: 0.4em 0;
 }
 section {
-  width: 1col 2grid 10gutter;
+  width: <strong>1col 2grid 10gutter</strong>;
 }
 section code {
   color: darkblue;
-}
+} 
 section ins {
   text-decoration: none;
   color: #777;
