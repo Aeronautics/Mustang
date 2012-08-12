@@ -1,132 +1,169 @@
 <!DOCTYPE html>
 <html lang=en-US>
 <meta charset=utf-8>
-<title>Aeronautics\Mustang</title>
+<title>Aeronautics/Mustang</title>
 <link rel=stylesheet href=styles/style.css>
 <header id="about">
   <hgroup>
-    <h1>Aeronautics\Mustang</h1>
-    <h2>A reusable Stylus CSS Framework</h2>
+    <h1>Aeronautics/Mustang</h1>
   </hgroup>
+  <p>A semantic-friendly CSS extension. It doesn't enforce any specific HTML markup. You're free.</p>
 </header>
 <article>
-  <p>Aeronautics\Mustang is a <em title="Work in progress!">not yet</em> fully featured, all-optional, modular CSS framework
-    written in Stylus. This page is styled by this:</p>
-<pre id="sample"><code>html
-  area 100%
+  <p>Let's start by eating our own dogfood. This page is styled only by these rules:</p>
+<pre id="sample"><code>@import 'mustang.styl'
+@import 'prefixes/all.styl'
+@import 'uses/normal.styl'
 
-body
-  area 55.5em 100%
-  position relative top center
-  font 14px Arial, Helvetica, FreeSans, sans-serif
-  background #EEE
-  color #555
-
-header
-  area 100% 5.5em
-
-header, article h2
-  border-bottom 1px solid #CCC
-
-article
-  width 12col 15col
-
-nav
-  margin 5gutter
-  width 3col 15col
-
-ul
-  padding-left 1em
-
-li
-  padding-top 0.5em
-
-section
-  margin 0.35gutter
-  width 2col 4col
-
-header, h2, a
-  color darken(teal, 25%)
-
-pre
-  padding 0.5em
-  border 1px solid #CCC</code></pre>
+{
+  use: normal, fonts spacing, html h1 h2 p ul li;
+  use: normal, html5-compat, sectioning;
+}
+body {
+  area: 65.5em 100%;
+  position: relative top center;
+}
+article,
+nav,
+section {
+  position: grid;
+}
+article {
+  width: 8col;
+  float: right;
+}
+nav {
+  width: 4col;
+}
+ul {
+  padding: 0 1em;
+  margin: 0;
+}
+li {
+  margin: 0.4em 0;
+}
+section {
+  width: 1col 2grid 10gutter;
+}
+section code {
+  color: darkblue;
+}
+section ins {
+  text-decoration: none;
+  color: #777;
+}</code></pre>
 
 <h2>Reference</h2>
 <section>
+  <h3>use</h3>
+  <p>Aplies groups of styles according to a pattern, acts over children.</p>
+  <pre><code>
+use: normal, fonts, h1;
+  <ins>//generates:
+  //h1 {
+  //  font-family: sans-serif;
+  //  font-size: 100%;
+  //  text-adjust: 100%; 
+  //}</ins>
+</code></pre>
+<p>Use<em>able</em> modules can be created, <em>normal</em> is a module for granular CSS normalization.</p>
+</section>
+<section>
+  <h3>use: normal, [features], [children]</h3>
+  <dl>
+    <dt>Features</dt>
+    <dd><ul>
+      <li>fonts
+        <ul>
+          <li>font-family</li>
+          <li>font-size</li>
+          <li>text-size-adjust</li>
+        </ul>
+      </li>
+      <li>spacing
+        <ul>
+          <li>margin</li>
+        </ul>
+      </li>
+    </ul></dd>
+  </dl>
+  <p>Aplies CSS normalization on all elements listed on <var>[children]</var>.</p>
+</section>
+<section>
   <h3>area</h3>
   <p>Simply combines width and height.</p>
-  <pre><code>body
-  area 60em
-    //width:  60em
-    //height: 60em
-  area 60em 70em
-    //width:  60em
-    //height: 70em</code></pre>
+  <pre><code>
+area: 60em;
+  <ins>//generates:
+  //width:  60em
+  //height: 60em</ins>
+area: 60em 70em;
+  <ins>//generates:
+  //width:  60em
+  //height: 70em</ins>
+</code></pre>
 </section>
 <section>
   <h3>position absolute</h3>
   <p>Beautifies the native <em>position</em> property.</p>
   <pre><code>
-position absolute top left
+position: absolute top left;
+  <ins>//generates:
   //position: absolute
   //top: 0
-  //left: 0
-position absolute bottom right
+  //left: 0</ins>
+position: absolute bottom right;
+  <ins>//generates:
   //position: absolute
   //bottom: 0
-  //right: 0
-
-position absolute top left 1em 2em
+  //right: 0</ins>
+position: absolute top left 1em 2em;
+  <ins>//generates:
   //position: absolute
   //bottom: 1em
-  //right: 2em</code></pre>
+  //right: 2em</ins></code></pre>
 </section>
 <section>
   <h3>position relative</h3>
   <p>Beautifies the native <em>position</em> property.</p>
   <pre><code>
-position relative center
+position: relative center;
+  <ins>//generates:
   //position: relative
-  //margin: 0 auto
-position
- relative left
+  //margin: 0 auto</ins>
+position:
+ relative left;
+  <ins>//generates:
   //position: relative
-  //margin: 0 auto 0 0</code></pre>
+  //margin: 0 auto 0 0</ins></code></pre>
 </section>
 
 <section>
-  <h3>width</h3>
+  <h3>width and position: grid</h3>
   <p>Makes the native <em>with</em> shine with the new <em>kind of units</em> <strong>col</strong> and <strong>gutter</strong> for CSS grids.</p>
-  <pre><code>half = 50%
-section
-  width 10% half
-    //10% of 50%
-    //width: 5%
-
-section
-  width 10% 50%
-    //10% of 50%
-    //width: 5%
-
-section
-  width 6col 12col
-    //Grid system model
-    //width: 50%
-    //float: left
+  <pre><code>
+section {
+  width: 6col 12grid;
+    <ins>//generates
+    //6 out of 12 columns
+    //width: 50%</ins>
+  position: grid;
+    <ins>//float: left
     //overflow: hidden
-    //display: inline
+    //display: inline</ins>
+}
 
-section
-  margin 40gutter
-  width 6col 12col
-    //Grid system model
+section {
+  width: 6col 12grid 40gutter;
+    <ins>//Grid system model
+    //6 out of 12 columns with gutter
     //width: 49% //around that
-    //margin: 0.5% //around that
-    //float: left
+    //margin: 0.5% //around that</ins>
+  position: grid;
+    <ins>//float: left
     //overflow: hidden
-    //display: inline
-</code></pre>
+    //display: inline</ins>
+}</code></pre>
 </section>
 </article>
 <nav>
@@ -139,31 +176,29 @@ section
   <h2>Keywords</h2>
   <p>mouseover items</p>
   <ul>
-    <li title="area [side]; area [width] [height]">area</li>
-    <li title="position [absolute|relative]">position
+    <li title="area: [side]; area [width] [height]">area</li>
+    <li title="use: [name], [features], [children];">use</li>
+    <li title="position: [absolute|relative]">position
       <ul>
-        <li title="position absolute [top|bottom] [right|left] [w] [h]">absolute
-          <ul title="position absolute top left 10em 5em">
+        <li title="position: absolute [top|bottom] [right|left] [w] [h]">absolute
+          <ul title="position: absolute top left 10em 5em">
             <li>top|bottom</li>
             <li>left|right</li>
           </ul>
         </li>
-        <li title="position relative [left|right|center]">relative
+        <li title="position: relative [left|right|center]">relative
           <ul>
             <li>left|right</li>
             <li>center</li>
           </ul>
         </li>
+        <li title="position: grid">grid</li>
       </ul>
     </li>
-    <li title="margin 5 gutter">margin</li>
-    <ul>
-      <li title="margin 5 gutter"><em>5</em><strong>gutter</strong></li>
-    </ul>
-    <li title="width 3col 12col //uses margin as gutter">width</li>
+    <li title="width: 3col 12grid">width</li>
       <ul>
-        <li title="width 3col 12col //uses margin as gutter"><em>3</em><strong>col</strong> <em>12</em><strong>col</strong></li>
+        <li title="width: 3col 12grid"><em>3</em><strong>col</strong> <em>12</em><strong>grid</strong></li>
+        <li title="width: 3col 12grid 40gutter"><em>3</em><strong>col</strong> <em>12</em><strong>grid</strong> <em>40</em><strong>gutter</strong></li>
       </ul>
   </ul>
-
 </nav>

@@ -1,0 +1,27 @@
+use-normal(aspects=none, targets=none)
+  if html in targets
+    html
+      if fonts in aspects or font-family in aspects
+        font-family sans-serif
+      if fonts in aspects or font-size in aspects
+        font-size 100%
+      if fonts in aspects or text-size-adjust in aspects
+        text-size-adjust 100%
+  if h1 in targets
+    h1
+      if fonts in aspects or font-size in aspects
+        font-size 2em
+      if spacing in aspects or margin in aspects
+        margin 0.67em 0
+  if h2 in targets
+    h2
+      if fonts in aspects or font-size in aspects
+        font-size 1.5em
+      if spacing in aspects or margin in aspects
+        margin 0.83em 0
+  if ul in targets
+    ul
+      if spacing in aspects or margin in aspects
+        margin 1em 0
+      if spacing in aspects or padding in aspects
+        padding 0 0 0 40px

@@ -1,94 +1,41 @@
-area(side, height=none)
-  if height == none
-    width side
-    height side
-  else
-    width side
-    height height
+@import 'mustang.styl'
+@import 'prefixes/all.styl'
+@import 'uses/normal.styl'
 
-position(spec, y=none, x=none, h=none, w=none)
-  position spec
-  if spec == relative
-    if x == center
-      margin 0 auto
-    else if x == left
-      margin 0 auto 0 0
-    else if x == right
-      margin 0 0 0 auto
-  else if spec == absolute
-    if y != none
-      if h != none
-        {y} h
-      else
-        {y} 0
-    if x != none
-      if w != none
-        {x} w
-      else
-        {x} 0
-
-width()
-  argc = length(arguments)
-  if argc == 1
-    width arguments[0]
-  if argc == 2
-    width (arguments[1] / arguments[0])
-  if argc == 3
-    width (arguments[2] / arguments[1] / arguments[0])
-  if argc == 4 and arguments[1] == col and arguments[3] == col
-    float left
-    display inline
-    overflow hidden
-    spacing-width = @margin
-    if spacing-width[1] == gutter
-      spacing-width = spacing-width / 2
-      grid-columns = arguments[2]
-      columns = arguments[0]
-      column-width = 1 + spacing-width
-      grid-width =  column-width * grid-columns
-      width ( 100% * ( ( column-width * columns ) - spacing-width) / grid-width )
-      margin 0 100% * ( ( spacing-width * 0.5 ) / grid-width)
-    else
-      grid-width = arguments[2]
-      width 100% * ( arguments[0] / grid-width )
-
-html
-  area 100%
-
-body
-  area 55.5em 100%
-  position relative top center
-  font 14px Arial, Helvetica, FreeSans, sans-serif
-  background #EEE
-  color #555
-
-header
-  area 100% 5.5em
-
-header, article h2
-  border-bottom 1px solid #CCC
-
-article
-  width 12col 15col
-
-nav
-  margin 5gutter
-  width 3col 15col
-
-ul
-  padding-left 1em
-
-li
-  padding-top 0.5em
-
-section
-  margin 0.35gutter
-  width 2col 4col
-
-header, h2, a
-  color darken(teal, 25%)
-
-pre
-  padding 0.5em
-  border 1px solid #CCC
-
+{
+  use: normal, fonts spacing, html h1 h2 p ul li;
+  use: normal, html5-compat, sectioning;
+}
+body {
+  area: 65.5em 100%;
+  position: relative top center;
+}
+article,
+nav,
+section {
+  position: grid;
+}
+article {
+  width: 8col;
+  float: right;
+}
+nav {
+  width: 4col;
+}
+ul {
+  padding: 0 1em;
+  margin: 0;
+}
+li {
+  margin: 0.4em 0;
+}
+section {
+  width: 1col 2grid 10gutter;
+}
+section code {
+  color: darkblue;
+}
+section ins {
+  text-decoration: none;
+  color: #777;
+}

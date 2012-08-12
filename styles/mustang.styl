@@ -1,0 +1,62 @@
+area(side, height=none)
+  if height == none
+    width side
+    height side
+  else
+    width side
+    height height
+
+position(spec, y=none, x=none, h=none, w=none)
+  if spec == relative
+    position spec
+    if x == center
+      margin 0 auto
+    else if x == left
+      margin 0 auto 0 0
+    else if x == right
+      margin 0 0 0 auto
+  else if spec == absolute
+    position spec
+    if y != none
+      if h != none
+        {y} h
+      else
+        {y} 0
+    if x != none
+      if w != none
+        {x} w
+      else
+        {x} 0
+  else if spec == grid
+    float left
+    display inline
+    overflow hidden
+  else
+    spec arguments
+
+width()
+  argc = length(arguments)
+  if argc == 1
+    width arguments[0]
+  else
+    if argc == 2
+      spacing-width = 20
+      grid-columns = 12
+    if argc == 4 and arguments[1] == col and arguments[3] == grid
+      spacing-width = 0
+    if argc == 4 and arguments[1] == col and arguments[3] == gutter
+      spacing-width = arguments[2]
+      grid-columns = 12
+    if argc == 6 and arguments[1] == col and arguments[3] == grid and arguments[5] == gutter
+      spacing-width = arguments[4] / 2
+      grid-columns = arguments[2]
+    columns = arguments[0]
+    column-width = 60 + spacing-width
+    grid-width =  column-width * grid-columns
+    width ( 100% * ( ( column-width * columns ) - spacing-width) / grid-width )
+    if spacing-width
+      margin 0 100% * ( ( spacing-width * 0.5 ) / grid-width)
+
+use(name, aspects=none, targets=none)
+  if aspects != none or targets != none 
+    {'use-'+name}: aspects, targets
