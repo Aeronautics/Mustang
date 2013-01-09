@@ -1,0 +1,7 @@
+** {
+    typography: ubuntu-webfont;
+}
+body {
+    width: 42em;
+    margin: 0 auto;
+}

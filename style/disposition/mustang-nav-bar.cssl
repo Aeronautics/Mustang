@@ -1,0 +1,40 @@
+@import 'disposition/mustang-nav-bar-simple.cssl';
+@import 'disposition/mustang-nav-bar-bottom.cssl';
+@import 'disposition/mustang-nav-bar-ordered.cssl';
+@import 'disposition/mustang-nav-bar-split.cssl';
+@import 'disposition/mustang-nav-bar-vertical.cssl';
+@import 'mustang/nav-colors.cssl';
+
+& {
+    disposition: mustang-nav-bar-simple;
+    mustang: nav-colors blue #ddd;
+}
+
+article &:last-child, section &:last-child {
+    disposition: mustang-nav-bar-bottom;
+}
+
+aside & {
+    disposition: mustang-nav-bar-vertical;
+}
+
+footer & {
+    mustang: nav-colors #888 #ddd #eee;
+}
+
+header & {
+    mustang: nav-colors blue #ddd #eee;
+}
+
+& ol {
+    disposition: mustang-nav-bar-ordered;
+}
+
+& dl {
+    disposition: mustang-nav-bar-split;
+}
+
+article article &, section & {
+    text-align: right;
+}
+

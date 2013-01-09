@@ -1,0 +1,12 @@
+
+a {
+    color: -param-0;
+}
+
+a:visited {
+    color: -param-1;
+}
+
+a:focus {
+    outline-color: -param-0;
+}

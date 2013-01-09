@@ -1,0 +1,21 @@
+code, 
+kbd, 
+var, 
+samp {
+    color: -param-0;
+    background: -param-1;
+}
+
+mark {
+    background: -param-2;
+}
+
+
+abbr {
+    border-color: -param-3;
+}
+
+q:after, q:before {
+    color: -param-3;
+}
+

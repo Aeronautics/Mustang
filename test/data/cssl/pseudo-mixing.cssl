@@ -1,0 +1,6 @@
+article {
+    fix: compat;
+}
+audio {
+    fix: compat;
+}

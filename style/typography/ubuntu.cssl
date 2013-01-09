@@ -1,0 +1,208 @@
+@import 'fix/compat.cssl';
+@import 'normalize/all.cssl';
+
+body {
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+p {
+    line-height: 1.5;
+}
+
+b, strong {
+    font-weight: 400;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.19em;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+h5, h6 {
+    font-size: 0.85em;
+    margin: 1.3em 0;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+}
+
+h5 {
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+code,
+kbd,
+pre,
+samp,
+var {
+    font-family: Ubuntu Mono;
+    font-size: 1em;
+}
+
+ul {
+    list-style: disc;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+ul ul, 
+ol ol, 
+ul ol, 
+ol ul, 
+dd ul, 
+dd ol, 
+ol dl, 
+dl dl {
+    font-size: 0.88em;
+}
+
+ul ul ul,
+ul ul dl,
+ul ul ol,
+ol ol ol,
+ol ol ul,
+ol ol dl, 
+ul ol ul,  
+ul ol dl,  
+ul ol ol, 
+ol ul ol,  
+ol ul ul,  
+ol ul dl, 
+dd ul ul,  
+dd ul ol,  
+dd ul dd, 
+dd ol ul,  
+dd ol ol,  
+dd ol dl, 
+ol dl ul, 
+ol dl dl, 
+ol dl ol,
+dl dl ul,
+dl dl dl,
+dl dl ol {
+    font-size: 1em;
+}
+
+ol, ol ol ol, ol ol ol ol ol {
+    list-style: decimal;
+}
+
+ol ol, ol ol ol ol, ol ol ol ol ol ol {
+    list-style: lower-alpha;
+}
+
+dt {
+    font-style: italic;
+}
+
+caption, th {
+    font-weight: 400;
+    text-align: left;
+}
+
+caption {
+    margin: 0 0 1em 0;
+    font-size: 1.03em;
+    font-weight: 400;
+}
+
+td, th {
+    padding: 0.4em 0.6em;
+}
+
+legend {
+    font-size: 1.03em;
+    font-weight: 400;
+}
+
+fieldset {
+}
+
+fieldset fieldset {
+    margin: 1em;
+}
+
+label + label {
+    margin-left: 0.5em;
+}
+
+label {
+    line-height: 2.7;
+}
+
+input, select, button {
+    font-weight: 300;
+}
+
+label input, label select, label textarea, label button {
+    vertical-align: middle;
+    padding: 0.2em;
+    margin-bottom: 0.1em;
+}
+
+button, input[type=submit] {
+    margin: 0.5em 1em;
+}
+
+hgroup {
+    overflow: auto;
+    vertical-align: middle;
+}
+hgroup *:last-child::before {
+    content: "―";
+    padding: 0 0.3em 0 0.2em;
+}
+hgroup *:first-child,
+hgroup *:last-child {
+    display: inline-block;
+}
+
+table input[type=text] {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+table td > input[type=checkbox], 
+table td > input[type=radio], 
+table td > input[type=submit], 
+table th > input[type=checkbox], 
+table th > input[type=radio], 
+table th > input[type=submit], 
+table button,
+table label,
+table select {
+    max-width: 100%;
+    min-width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+abbr {
+    border-bottom: 0.1em dotted black;
+}
+
+h1 strong, 
+h2 strong, 
+h3 strong, 
+h4 strong, 
+h5 strong, 
+legend strong, 
+caption strong, 
+th strong {
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}

@@ -1,0 +1,175 @@
+@import 'fix/compat.cssl';
+@import 'normalize/all.cssl';
+@import 'typography/ubuntu.cssl';
+@import 'ubuntu-web/text-colors.cssl'; 
+@import 'ubuntu-web/heading-colors.cssl';
+@import 'ubuntu-web/inline-colors.cssl';
+@import 'ubuntu-web/form-colors.cssl';
+@import 'ubuntu-web/link-colors.cssl';
+@import 'ubuntu-web/table-colors.cssl';
+
+** {
+    typography: ubuntu;
+}
+
+body {
+    ubuntu-web: text-colors #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup *:last-child,
+hgroup *:last-child::before  {
+    ubuntu-web: heading-colors #111 transparent #444;
+}
+
+h1, h2 {
+    letter-spacing: -0.03em;
+}
+
+code, 
+kbd, 
+var, 
+samp,
+mark {
+    padding: 0.1em 0.2em;
+    -webkit-border-radius: 0.15em;
+    -moz-border-radius: 0.15em;
+    border-radius: 0.15em;
+}
+
+code,
+kbd,
+var,
+samp,
+mark,
+abbr,
+q {
+    ubuntu-web: inline-colors #000 #eee #ff6 #999;
+}
+
+
+
+input[type=button],
+input[type=submit],
+input[type=text],
+table input[type=text],
+button,
+select,
+textarea,
+fieldset {
+    ubuntu-web: form-colors blue #FFF #ccc;
+}
+
+input[type=button],
+input[type=submit],
+input[type=text],
+table input[type=text],
+button,
+select,
+textarea {
+    border-width: 0.1em;
+    border-style: solid;
+    padding: 0.3em 0.6em;
+    font-size: 1em;
+    -webkit-border-radius: 0.15em;
+    -moz-border-radius: 0.15em;
+    border-radius: 0.15em;
+}
+
+input[type=button],
+input[type=submit],
+button {
+    font-weight: 400;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+button:hover,
+input[type=button]:focus,
+input[type=submit]:focus,
+input[type=text]:focus,
+table input[type=text]:focus,
+button:focus,
+select:focus,
+textarea:focus {
+    border-width: 0.1em;
+    border-style: solid;
+    ubuntu-web: form-colors blue #FFF #ddd blue;
+}
+
+tr:hover td, th, thead, tfoot {
+    ubuntu-web: table-colors #eee #ddd;
+}
+
+th, 
+thead,
+tfoot {
+    border-width: 0;
+    border-bottom-width: 0.2em;
+    border-style: solid;
+}
+
+thead th, tfoot th {
+    border: 0;
+}
+
+fieldset {
+    border-width: 0;
+    border-top-width: 0.15em;
+    border-style: solid;
+}
+
+hgroup *:last-child,
+hgroup *:last-child::before {
+    font-weight: 300;
+}
+
+q:after, q:before {
+    font-size: 1.1em;
+    position: relative;
+    top: 0.08em;
+}
+
+optgroup {
+    font-weight: 400;
+}
+
+a, a:visited, a:focus {
+    ubuntu-web: link-colors blue #555;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline-width: 0.1em;
+    outline-style: dotted;
+}
+
+label {
+    display: block;
+    line-height: 1;
+}
+
+label, label + label {
+    margin: 0.8em;
+}
+
+label input, label select, label textarea {
+    display: block;
+    margin: 0;
+}
+
+label input[type=checkbox],
+label input[type=radio] {
+    float: left;
+    margin: 0 0.3em;
+}
+
+

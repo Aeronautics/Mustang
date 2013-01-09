@@ -1,0 +1,7 @@
+* {
+    font-size: 12pt;
+    font-weight: normal;
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}

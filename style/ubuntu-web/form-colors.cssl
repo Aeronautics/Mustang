@@ -1,0 +1,31 @@
+input[type=button],
+input[type=submit],
+input[type=text],
+table input[type=text],
+button,
+select,
+textarea,
+fieldset {
+    border-color: -param-2;
+    color: -param-0;
+    background-color: -param-1;
+}
+
+
+input[type=button]:hover,
+input[type=submit]:hover,
+button:hover {
+    background: -param-2;
+    border-color: -param-2;
+}
+
+input[type=button]:focus,
+input[type=submit]:focus,
+input[type=text]:focus,
+table input[type=text]:focus,
+button:focus,
+select:focus,
+textarea:focus {
+    border-color: -param-3;
+}
+

@@ -1,0 +1,5 @@
+@import 'fix/compat.cssl';
+
+** {
+    fix: compat;
+}

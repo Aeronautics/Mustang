@@ -1,0 +1,38 @@
+& {
+    display: block;
+    -moz-column-width: 18em;
+    -moz-column-gap: 2em;
+    -moz-column-rule-color: #ddd;
+    -moz-column-rule-style: solid;
+    -moz-column-rule-width: 0.1em;
+    -webkit-column-width: 18em;
+    -webkit-column-gap: 2em;
+    -webkit-column-rule-color: #ddd;
+    -webkit-column-rule-style: solid;
+    -webkit-column-rule-width: 0.1em;
+    column-width: 18em;
+    column-gap: 2em;
+    column-rule-color: #ddd;
+    column-rule-style: solid;
+    column-rule-width: 0.1em;
+    line-height: 1;
+}
+
+& a {
+    float: none;
+    display: inline;
+    text-align: left;
+    margin: 0;
+}
+
+& dd, & dt {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+& dd {
+    font-size: 0.8em;
+    padding-bottom: 0.6em;
+    margin-left: 1.2em;
+}

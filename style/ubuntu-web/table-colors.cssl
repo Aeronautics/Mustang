@@ -1,0 +1,14 @@
+
+tr:hover td {
+    background: -param-0;
+}
+
+th, 
+thead {
+    border-color: -param-1;
+}
+
+tfoot {
+    border-color: -param-1;
+}
+

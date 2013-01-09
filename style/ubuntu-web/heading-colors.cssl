@@ -1,0 +1,14 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: -param-0;
+    background: -param-1;
+}
+
+hgroup *:last-child,
+hgroup *:last-child::before {
+    color: -param-2;
+}

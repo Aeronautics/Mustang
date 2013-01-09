@@ -1,0 +1,11 @@
+@import 'typography/plain.cssl';
+@import 'typography/markdown.cssl';
+
+** {
+    typography: plain markdown;
+}
+body {
+    font-family: monospace;
+    width: 42em;
+    margin: 0 auto;
+}

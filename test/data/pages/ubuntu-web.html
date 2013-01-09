@@ -1,0 +1,245 @@
+<!doctype html>
+<link href=../results/ubuntu-web.cssl rel=stylesheet>
+<meta charset=utf-8>
+<h1>Ubuntu Font Inspired Typography Library</h1>
+<p>Hi! Welcome to the Ubuntu Mustang Library. The heading above is the h1, 
+below, the following:</p>
+<h2>Second Title</h2>
+<p>Here you can also see some
+    <strong>strong</strong>,
+    <b>bold</b> and
+    <em>emphasis</em>. All text is based on the Ubuntu font in weight 300, which
+    is a little bit lighter than the normal. These bolds use the weight 400. 
+    Text is at 12pt.
+</p> 
+<h3>Third Title</h3>
+<p>The brothers
+    <dfn>dfn</dfn>,
+    <code>code</code>, 
+    <kbd>kbd</kbd>, 
+    <var>var</var> and 
+    <samp>samp</samp>. Ubuntu Mono is also used for this guys.
+</p>
+<h4>Fourth Title</h4>
+<p>A little place for the
+    <q>q</q> (with proper quotes),
+    <abbr>abbr</abbr> and 
+    <small>small</small>.
+</p>
+<h5>Fifth Title</h5>
+<p>Samples for 
+    <sub>sub</sub>,
+    <sup>sup</sup> and
+    <mark>mark</mark> (hey Mark!),</p>
+<h6>Sixth Title</h6>
+<p>And finally some other guys: </p>
+    <a href=#>a href</a>. 
+    <pre>pre.</pre>
+    <blockquote>
+        blockquote.
+        <cite>cite</cite>
+    </blockquote>
+    <address>address.</address>
+<hgroup>
+    <h1>Primary title</h1>
+    <h2>Second title</h2>
+</hgroup>
+<hgroup>
+    <h2>Second title</h1>
+    <h3>Third title</h2>
+</hgroup>
+<hgroup>
+    <h3>Third title</h1>
+    <h4>Fourth title</h2>
+</hgroup>
+<hgroup>
+    <h4>Fourth title</h1>
+    <h5>Fifth title</h2>
+</hgroup>
+<hgroup>
+    <h5>Fifth title</h1>
+    <h6>Sixth title</h2>
+</hgroup>
+<p>There are some tricks with hgroups as you can see above!<p>
+<h2>Lists (this is another h2!)</h2>
+    <ul>
+        <li>All list items uses bullets</li>
+        <li>Even lists inside uses bullets</li>
+    </ul>
+    <p>Nested:</p>
+    <ul>
+        <li>Normal item</li>
+        <li>        
+            Text inside some li
+            <ul>
+                <li>Lists inside others are smaller</li>
+                <li>Some Item</li>
+                <li>Some Item</li>
+            </ul>
+        </li>
+        <li>Some Item</li>
+        <li>Some Item</li>
+    </ul>
+    <p>Ordered:</p>
+    <ol>
+        <li>One</li>
+        <li>Perhaps Two</li>
+        <li>Always by number on first level</li>
+    </ol>
+    <p>Nested:</p>
+    <ol>
+        <li>One</li>
+        <li>Perhaps Two</li>
+        <li>        
+            Some li text
+            <ol>
+                <li>Now alpha</li>
+                <li>       
+                    <ol>
+                        <li>Now number again</li>
+                        <li>And again</li>
+                        <li>And again</li>
+                    </ol>
+                </li>
+            <li>Some Item</li>
+            <li>Some Item</li>
+            </ol>
+        </li>
+            <li>Some Item</li>
+            <li>Some Item</li>
+    </ol>
+    <p>Definition lists support more than one definition per term.</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>Web</dt>
+        <dd>A set of interconected documents</dd>
+    </dl>
+    <h2>Extreme Nesting</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>Web</dt>
+        <dd>A set of interconected documents</dd>
+        <dd>
+            Stack
+            <ol>
+                <li>HTTP</li>
+                <li>        
+                    HTML
+                    <ul>
+                        <li>HTML4</li>
+                        <li>     
+                            Microdata  
+                            <ol>
+                                <li>RDFa</li>
+                                <li>Microformats</li>
+                                <li>Data Attributes</li>
+                            </ol>
+                        </li>
+                        <li>Some Item</li>
+                        <li>Some Item</li>
+                    </ul>
+                </li>
+                <li>Some Item</li>
+                <li>Some Item</li>
+            </ol>
+        </dd>
+        <dd>A network of websites</dd>
+        <dt>Some term</dt>
+        <dd>Some definition</dd>
+    </dl>
+    <h2>Tables</h2>
+    <p>Full styles for all table elements including caption.</p>
+    <table>
+        <caption>Caption</caption>
+        <thead>
+            <tr>
+                <th>Foo</th>
+                <th>Bar</th>
+                <th>Baz</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Foo</th>
+                <th>Bar</th>
+                <th>Baz</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Foo</td>
+                <td>Bar</td>
+                <td>Baz</td>
+            </tr>
+            <tr>
+                <td>Foo Foo Foo</td>
+                <td>Bar</td>
+                <td>Baz Baz</td>
+            </tr>
+            <tr>
+                <td>Foo Foo</td>
+                <td>Bar Bar Bar Bar</td>
+                <td>Baz Baz</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Forms</h2>
+    <p>Small form adjustments just to make things cleaner for form layouts. Borders
+    left for better distinction betweent text and controls</p>
+    <form action=/ method=get>
+        <fieldset>
+            <legend>Legend</legend>
+            <label>Label and <input value=input type=text size=23></label>
+            <label>Select and <select><optgroup label="(and optgroup)" selected></optgroup><option>option</option></select></label>
+            <label>Textarea <textarea></textarea></label>
+            <label>Radio <input type=radio></label>
+            <label>Checkbox <input type=checkbox></label>
+                <fieldset>
+                    <legend>Legend again!</legend>
+                    <label><input type=radio> Radio</label>
+                    <label><input type=checkbox> Checkbox</label>
+                </fieldset>
+            <input type=submit value=submit><button>button</button>
+        </fieldset>
+    </form>
+    <p>Forms and tables together. Elements inside cells are specially
+    positioned.</p>
+    <form action=/ method=get>
+        <table>
+            <caption>Caption</caption>
+            <thead>
+                <tr>
+                    <td><label><input type=checkbox> Foo</label></td>
+                    <th>Bar</th>
+                    <th>Baz</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Foo</th>
+                    <th>Bar</th>
+                    <th><input type=text size=10 /></th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td><select><option>foobar</option></select></td>
+                    <td><input type=text size=10 /></td>
+                    <td>Baz</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td><input type=checkbox></td>
+                    <td>Bar Bar Bar Bar</td>
+                    <td><button>button</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</p>

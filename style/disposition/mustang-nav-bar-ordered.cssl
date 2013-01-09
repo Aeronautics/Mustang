@@ -1,0 +1,39 @@
+& {
+    display: block;
+    font-weight: 300;
+    -moz-column-width: 18em;
+    -moz-column-gap: 2em;
+    -moz-column-rule-color: #ddd;
+    -moz-column-rule-style: solid;
+    -moz-column-rule-width: 0.1em;
+    -webkit-column-width: 18em;
+    -webkit-column-gap: 2em;
+    -webkit-column-rule-color: #ddd;
+    -webkit-column-rule-style: solid;
+    -webkit-column-rule-width: 0.1em;
+    column-width: 18em;
+    column-gap: 2em;
+    column-rule-color: #ddd;
+    column-rule-style: solid;
+    column-rule-width: 0.1em;
+}
+
+& ol, & ul {
+    font-size: 1em;
+}
+
+& a {
+    font-style: normal;
+    padding-left: 0.6em;
+    margin-left: -0.4em;
+    display: inline;
+    float: none;
+    text-align: left;
+}
+
+& li {
+    margin-left: 0.6em;
+    display: list-item;
+    list-style: decimal inside;
+}
+

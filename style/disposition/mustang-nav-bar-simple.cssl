@@ -1,0 +1,88 @@
+@import 'mustang/nav-colors.cssl';
+
+& {
+    mustang: nav-colors #36F #ddd;
+    overflow: auto;
+    border-width: 0;
+    border-bottom-width: 0.15em;
+    border-style: solid;
+    padding: 0 0.25em;
+    min-height: 2.8em;
+}
+
+& ul, & ol, & dl, & dd, & dt, & li, & form, & fieldset, & label, & fieldset {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+}
+
+& input[type=text],
+& button,
+& input[type=button] {
+    font-size: 1em;
+    margin: 0.2em 0.2em 0 0.2em;
+    float: none;
+}
+
+& legend {
+    display: none;
+}
+
+& fieldset {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+& form, & fieldset {
+    display: inline;
+}
+
+& input[type=radio],
+& input[type=checkbox] {
+    font-size: 1.2em;
+    margin: 0.45em 0.25em 0 0;
+}
+
+& form label,
+& a {
+    font-weight: 400;
+    margin: 0.25em 0 0 0;
+    height: 1.7em;
+    line-height: 1.7;
+    padding: 0.1em 0.6em;
+    text-decoration: none;
+}
+
+& input[type=submit], 
+& input[type=text], 
+& button,
+& form label,
+& a {
+    font-size: 1.2em;
+    letter-spacing: -0.05em;
+    display: inline-block;
+    min-width: 2em;
+    text-align: center;
+}
+
+& input[type=text] {
+    text-align: left;
+    padding: 0.35em;
+}
+
+& button,
+& input[type=button] {
+    font-weight: 400;
+}
+
+& a:hover, & label:hover {
+    -webkit-border-radius: 0.15em;
+    -moz-border-radius: 0.15em;
+    border-radius: 0.15em;
+}
+
+

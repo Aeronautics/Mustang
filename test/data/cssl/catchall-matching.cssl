@@ -1,0 +1,5 @@
+@import 'fix/clearfix.cssl';
+
+p {
+    fix: clearfix;
+}

@@ -1,0 +1,107 @@
+h1::before {
+    content: "# ";
+    color: #555;
+}
+h2::before {
+    content: "## ";
+    color: #555;
+}
+h3::before {
+    content: "### ";
+    color: #555;
+}
+h4::before {
+    content: "#### ";
+    color: #555;
+}
+h5::before {
+    content: "##### ";
+    color: #555;
+}
+h6::before {
+    content: "###### ";
+    color: #555;
+}
+em:before,
+em:after {
+    content: "_";
+    color: #555;
+}
+strong:before, 
+strong:after,
+b:before,
+b:after {
+    content: "**";
+    color: #555;
+}
+
+code:before,
+code:after,
+kbd:before,
+kbd:after,
+var:before,
+var:after,
+samp:before,
+samp:after {
+    content: "`";
+    color: #555;
+}
+
+blockquote:before, blockquote p:before {
+    content: "> ";
+    color: #555;
+}
+
+blockquote p:first-child:before {
+    content: "";
+}
+
+ul li {
+    list-style: none;
+}
+ul li:before {
+    content: "- ";
+    color: #555;
+}
+
+pre > code {
+    text-indent: 3em;
+}
+
+hr:before {
+    content: "  ---  ";
+    color: #555;
+}
+
+hr {
+    text-align: center;
+    color: transparent;
+    height: 0;
+    display: block; 
+    line-height: 0;
+    margin: 2em 0;
+}
+
+hgroup * {
+    margin: 0;
+}
+
+hgroup {
+    margin: 1em 0;
+}
+
+a:before {
+    content: "[";
+    color: #555;
+}
+a:after {
+    content: "](" attr(href) ")";
+    color: #555;
+}
+
+pre:before, pre:after {
+    content: "
+    ```
+    ";
+    color: #555;
+}

@@ -1,0 +1,4 @@
+body {
+    color: -param-0;
+    background: -param-1;
+}

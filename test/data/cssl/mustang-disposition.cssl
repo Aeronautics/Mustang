@@ -1,0 +1,15 @@
+@import 'disposition/mustang-nav-bar.cssl';
+@import 'typography/ubuntu-web.cssl';
+
+** {
+    typography: ubuntu-web;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    disposition: mustang-nav-bar;
+}

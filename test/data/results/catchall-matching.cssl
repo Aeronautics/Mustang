@@ -1,0 +1,5 @@
+p:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+p {display: inline-block;}
+html[xmlns] p {display: block;}
+* html p {height: 1%;}
+

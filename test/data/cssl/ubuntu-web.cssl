@@ -1,0 +1,10 @@
+@import 'typography/ubuntu-webfont.cssl';
+@import 'typography/ubuntu-web.cssl';
+
+** {
+    typography: ubuntu-webfont ubuntu-web;
+}
+body {
+    width: 42em;
+    margin: 0 auto;
+}

@@ -1,0 +1,183 @@
+body {font-family: Ubuntu;font-weight: 300;font-size: 12pt;color: rgb(34,34,34);}
+p {line-height: 1.5;}
+b {font-weight: 400;}
+strong {font-weight: 400;}
+h1 {font-weight: 400;color: rgb(17,17,17);background: transparent;letter-spacing: -0.03em;}
+h2 {font-weight: 400;color: rgb(17,17,17);background: transparent;letter-spacing: -0.03em;}
+h3 {font-weight: 400;font-size: 1.19em;color: rgb(17,17,17);background: transparent;}
+h4 {font-weight: 400;font-size: 1em;color: rgb(17,17,17);background: transparent;}
+h5 {font-size: 0.9em;margin: 1.3em 0;font-weight: 400;letter-spacing: 0.1em;color: rgb(17,17,17);background: transparent;}
+h6 {font-size: 0.85em;margin: 1.3em 0;font-weight: 400;letter-spacing: 0.15em;color: rgb(17,17,17);background: transparent;}
+code {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;color: rgb(0,0,0);background: rgb(238,238,238);}
+kbd {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;color: rgb(0,0,0);background: rgb(238,238,238);}
+pre {font-family: Ubuntu Mono;font-size: 1em;}
+samp {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;color: rgb(0,0,0);background: rgb(238,238,238);}
+var {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;color: rgb(0,0,0);background: rgb(238,238,238);}
+ul {list-style: disc;}
+li {margin: 0.5em 0;}
+ul ul {font-size: 0.88em;}
+ol ol {font-size: 0.88em;list-style: lower-alpha;}
+ul ol {font-size: 0.88em;}
+ol ul {font-size: 0.88em;}
+dd ul {font-size: 0.88em;}
+dd ol {font-size: 0.88em;}
+ol dl {font-size: 0.88em;}
+dl dl {font-size: 0.88em;}
+ul ul ul {font-size: 1em;}
+ul ul dl {font-size: 1em;}
+ul ul ol {font-size: 1em;}
+ol ol ol {font-size: 1em;list-style: decimal;}
+ol ol ul {font-size: 1em;}
+ol ol dl {font-size: 1em;}
+ul ol ul {font-size: 1em;}
+ul ol dl {font-size: 1em;}
+ul ol ol {font-size: 1em;}
+ol ul ol {font-size: 1em;}
+ol ul ul {font-size: 1em;}
+ol ul dl {font-size: 1em;}
+dd ul ul {font-size: 1em;}
+dd ul ol {font-size: 1em;}
+dd ul dd {font-size: 1em;}
+dd ol ul {font-size: 1em;}
+dd ol ol {font-size: 1em;}
+dd ol dl {font-size: 1em;}
+ol dl ul {font-size: 1em;}
+ol dl dl {font-size: 1em;}
+ol dl ol {font-size: 1em;}
+dl dl ul {font-size: 1em;}
+dl dl dl {font-size: 1em;}
+dl dl ol {font-size: 1em;}
+ol {list-style: decimal;}
+ol ol ol ol ol {list-style: decimal;}
+ol ol ol ol {list-style: lower-alpha;}
+ol ol ol ol ol ol {list-style: lower-alpha;}
+dt {font-style: italic;}
+caption {font-weight: 400;text-align: left;margin: 0 0 1em 0;font-size: 1.03em;}
+th {font-weight: 400;text-align: left;padding: 0.4em 0.6em;border-color: rgb(221,221,221);border-width: 0;border-bottom-width: 0.2em;border-style: solid;}
+td {padding: 0.4em 0.6em;}
+legend {font-size: 1.03em;font-weight: 400;}
+fieldset fieldset {margin: 1em;}
+label + label {margin-left: 0.5em;margin: 0.8em;}
+label {line-height: 1;display: block;margin: 0.8em;}
+input {font-weight: 300;}
+select {font-weight: 300;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+button {font-weight: 400;margin: 0.5em 1em;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+label input {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;display: block;margin: 0;}
+label select {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;display: block;margin: 0;}
+label textarea {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;display: block;margin: 0;}
+label button {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;}
+input[type=submit] {margin: 0.5em 1em;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;font-weight: 400;}
+hgroup {overflow: auto;vertical-align: middle;}
+hgroup *:last-child::before {content: "―";padding: 0 0.3em 0 0.2em;color: rgb(68,68,68);font-weight: 300;}
+hgroup *:first-child {display: inline-block;}
+hgroup *:last-child {display: inline-block;color: rgb(68,68,68);font-weight: 300;}
+table input[type=text] {width: auto;margin: 0;padding: 0.3em 0.6em;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+table td > input[type=checkbox] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
+table td > input[type=radio] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
+table td > input[type=submit] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
+table th > input[type=checkbox] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
+table th > input[type=radio] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
+table th > input[type=submit] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
+table button {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
+table label {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
+table select {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
+abbr {border-bottom: 0.1em dotted black;border-color: rgb(153,153,153);}
+h1 strong {font-weight: bold;letter-spacing: 0.01em;}
+h2 strong {font-weight: bold;letter-spacing: 0.01em;}
+h3 strong {font-weight: bold;letter-spacing: 0.01em;}
+h4 strong {font-weight: bold;letter-spacing: 0.01em;}
+h5 strong {font-weight: bold;letter-spacing: 0.01em;}
+legend strong {font-weight: bold;letter-spacing: 0.01em;}
+caption strong {font-weight: bold;letter-spacing: 0.01em;}
+th strong {font-weight: bold;letter-spacing: 0.01em;}
+mark {padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;background: rgb(255,255,102);}
+input[type=button] {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;font-weight: 400;}
+input[type=text] {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+textarea {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+fieldset {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0;border-top-width: 0.15em;border-style: solid;}
+input[type=button]:hover {border-width: 0.1em;border-style: solid;background: rgb(221,221,221);border-color: rgb(221,221,221);}
+input[type=submit]:hover {border-width: 0.1em;border-style: solid;background: rgb(221,221,221);border-color: rgb(221,221,221);}
+button:hover {border-width: 0.1em;border-style: solid;background: rgb(221,221,221);border-color: rgb(221,221,221);}
+input[type=button]:focus {border-width: 0.1em;border-style: solid;border-color: blue;}
+input[type=submit]:focus {border-width: 0.1em;border-style: solid;border-color: blue;}
+input[type=text]:focus {border-width: 0.1em;border-style: solid;border-color: blue;}
+table input[type=text]:focus {border-width: 0.1em;border-style: solid;border-color: blue;}
+button:focus {border-width: 0.1em;border-style: solid;border-color: blue;}
+select:focus {border-width: 0.1em;border-style: solid;border-color: blue;}
+textarea:focus {border-width: 0.1em;border-style: solid;border-color: blue;}
+tr:hover td {background: rgb(238,238,238);}
+thead {border-color: rgb(221,221,221);border-width: 0;border-bottom-width: 0.2em;border-style: solid;}
+tfoot {border-color: rgb(221,221,221);border-width: 0;border-bottom-width: 0.2em;border-style: solid;}
+thead th {border: 0;}
+tfoot th {border: 0;}
+q:after {font-size: 1.1em;position: relative;top: 0.08em;}
+q:before {font-size: 1.1em;position: relative;top: 0.08em;}
+optgroup {font-weight: 400;}
+a {color: blue;}
+a:visited {color: rgb(85,85,85);}
+a:focus {outline-color: blue;outline-width: 0.1em;outline-style: dotted;}
+a:hover {text-decoration: none;}
+label input[type=checkbox] {float: left;margin: 0 0.3em;}
+label input[type=radio] {float: left;margin: 0 0.3em;}
+body {width: 90%;margin: 0 auto;}
+nav {border-color: rgb(221,221,221);overflow: auto;border-width: 0;border-bottom-width: 0.15em;border-style: solid;padding: 0 0.25em;min-height: 2.8em;}
+nav input[type=submit] {color: blue;font-size: 1.2em;letter-spacing: -0.05em;display: inline-block;min-width: 2em;text-align: center;}
+nav input[type=text] {color: blue;font-size: 1.2em;margin: 0.2em 0.2em 0 0.2em;float: none;letter-spacing: -0.05em;display: inline-block;min-width: 2em;text-align: left;padding: 0.35em;}
+nav button {color: blue;font-size: 1.2em;margin: 0.2em 0.2em 0 0.2em;float: none;letter-spacing: -0.05em;display: inline-block;min-width: 2em;text-align: center;font-weight: 400;}
+nav form label {color: blue;font-weight: 400;margin: 0.25em 0 0 0;height: 1.7em;line-height: 1.7;padding: 0.1em 0.6em;text-decoration: none;font-size: 1.2em;letter-spacing: -0.05em;display: inline-block;min-width: 2em;text-align: center;}
+nav a {color: blue;font-weight: 400;margin: 0.25em 0 0 0;height: 1.7em;line-height: 1.7;padding: 0.1em 0.6em;text-decoration: none;font-size: 1.2em;letter-spacing: -0.05em;display: inline-block;min-width: 2em;text-align: center;}
+nav a:hover {color: blue;background-color: rgb(221,221,221);-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+nav label:hover {color: blue;background-color: rgb(221,221,221);-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+nav input[type=submit]:focus {border-color: blue;}
+nav button:focus {border-color: blue;}
+nav input[type=text]:focus {border-color: blue;}
+nav ul {display: inline;list-style: none;margin: 0;padding: 0;border: 0;position: relative;}
+nav ol {display: block;list-style: none;margin: 0;padding: 0;border: 0;position: relative;font-weight: 300;-moz-column-width: 18em;-moz-column-gap: 2em;-moz-column-rule-color: rgb(221,221,221);-moz-column-rule-style: solid;-moz-column-rule-width: 0.1em;-webkit-column-width: 18em;-webkit-column-gap: 2em;-webkit-column-rule-color: rgb(221,221,221);-webkit-column-rule-style: solid;-webkit-column-rule-width: 0.1em;column-width: 18em;column-gap: 2em;column-rule-color: rgb(221,221,221);column-rule-style: solid;column-rule-width: 0.1em;}
+nav dl {display: block;list-style: none;margin: 0;padding: 0;border: 0;position: relative;-moz-column-width: 18em;-moz-column-gap: 2em;-moz-column-rule-color: rgb(221,221,221);-moz-column-rule-style: solid;-moz-column-rule-width: 0.1em;-webkit-column-width: 18em;-webkit-column-gap: 2em;-webkit-column-rule-color: rgb(221,221,221);-webkit-column-rule-style: solid;-webkit-column-rule-width: 0.1em;column-width: 18em;column-gap: 2em;column-rule-color: rgb(221,221,221);column-rule-style: solid;column-rule-width: 0.1em;line-height: 1;}
+nav dd {display: inline;list-style: none;margin: 0;padding: 0;border: 0;position: relative;}
+nav dt {display: inline;list-style: none;margin: 0;padding: 0;border: 0;position: relative;}
+nav li {display: inline;list-style: none;margin: 0;padding: 0;border: 0;position: relative;}
+nav form {display: inline;list-style: none;margin: 0;padding: 0;border: 0;position: relative;}
+nav fieldset {display: inline;list-style: none;margin: 0;padding: 0;border: 0;position: relative;-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;}
+nav label {display: inline;list-style: none;margin: 0;padding: 0;border: 0;position: relative;}
+nav input[type=button] {font-size: 1em;margin: 0.2em 0.2em 0 0.2em;float: none;font-weight: 400;}
+nav legend {display: none;}
+nav input[type=radio] {font-size: 1.2em;margin: 0.45em 0.25em 0 0;}
+nav input[type=checkbox] {font-size: 1.2em;margin: 0.45em 0.25em 0 0;}
+article nav:last-child {border-top-width: 0.15em;border-bottom-width: 0;}
+section nav:last-child {border-top-width: 0.15em;border-bottom-width: 0;}
+aside nav a {display: block;text-align: left;font-weight: 300;}
+aside nav form label {display: block;text-align: left;font-weight: 300;}
+aside nav input {display: block;text-align: left;font-weight: 300;}
+aside nav button {display: block;text-align: left;font-weight: 300;}
+footer nav {border-color: rgb(221,221,221);background: rgb(238,238,238);}
+footer nav input[type=submit] {color: rgb(136,136,136);}
+footer nav input[type=text] {color: rgb(136,136,136);}
+footer nav button {color: rgb(136,136,136);}
+footer nav form label {color: rgb(136,136,136);}
+footer nav a {color: rgb(136,136,136);}
+footer nav a:hover {color: rgb(136,136,136);background-color: rgb(221,221,221);}
+footer nav label:hover {color: rgb(136,136,136);background-color: rgb(221,221,221);}
+footer nav input[type=submit]:focus {border-color: rgb(136,136,136);}
+footer nav button:focus {border-color: rgb(136,136,136);}
+footer nav input[type=text]:focus {border-color: rgb(136,136,136);}
+header nav {border-color: rgb(221,221,221);background: rgb(238,238,238);}
+header nav input[type=submit] {color: blue;}
+header nav input[type=text] {color: blue;}
+header nav button {color: blue;}
+header nav form label {color: blue;}
+header nav a {color: blue;}
+header nav a:hover {color: blue;background-color: rgb(221,221,221);}
+header nav label:hover {color: blue;background-color: rgb(221,221,221);}
+header nav input[type=submit]:focus {border-color: blue;}
+header nav button:focus {border-color: blue;}
+header nav input[type=text]:focus {border-color: blue;}
+nav ol ol {font-size: 1em;}
+nav ol ul {font-size: 1em;}
+nav ol a {font-style: normal;padding-left: 0.6em;margin-left: -0.4em;display: inline;float: none;text-align: left;}
+nav ol li {margin-left: 0.6em;display: list-item;list-style: decimal inside;}
+nav dl a {float: none;display: inline;text-align: left;margin: 0;}
+nav dl dd {display: block;padding: 0;margin: 0;font-size: 0.8em;padding-bottom: 0.6em;margin-left: 1.2em;}
+nav dl dt {display: block;padding: 0;margin: 0;}
+article article nav {text-align: right;}
+section nav {text-align: right;}
