@@ -1,7 +1,7 @@
 Aeronautics\Mustang
 ===================
 
-The Insanely Modular CSS Framework, which is in **heavy development**, therefore **highly unstable**.
+The Insanely Modular CSS Framework, which is in **heavy development**, therefore **highly unstable**. It's small (260 lines) and have few dependencies (Sabberworm\PHP-CSS-PARSER).
 
 Preview
 -------
@@ -12,7 +12,10 @@ Mustang works mainly by extending CSS rules.
         mustang-really-allows-you-to-create-whatever-rules-you: want;
     }
 
-These rules are then processed against a library code, which handles what the custom property does.
+Libraries also reuse selectors using the `&` wildcard and apply bulk selectors using the `**` wildcard. Libraries
+also can accept parameters.
+
+These rules and selectors are then processed against a library code, which handles what the custom property does.
 
 Framework code is organized then by properties:
 
