@@ -1,5 +1,5 @@
-@import 'fix/compat.cssl';
-@import 'normalize/all.cssl';
+@import '-fix/compat.cssl';
+@import '-normalize/all.cssl';
 
 body {
     font-family: Ubuntu;

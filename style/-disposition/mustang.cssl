@@ -1,0 +1,5 @@
+@import '-disposition/mustang-nav-bar.cssl';
+
+nav {
+    -disposition: mustang-nav-bar;
+}

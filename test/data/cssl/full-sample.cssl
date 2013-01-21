@@ -1,12 +1,12 @@
-@import 'normalize/all.cssl';
-@import 'fix/compat.cssl';
-@import 'fix/clearfix.cssl';
+@import '-normalize/all.cssl';
+@import '-fix/compat.cssl';
+@import '-fix/clearfix.cssl';
 
-** {
-    normalize: all;
-    fix: compat;
+-all {
+    -normalize: all;
+    -fix: compat;
 }
 
 #foo {
-    fix: clearfix;
+    -fix: clearfix;
 }

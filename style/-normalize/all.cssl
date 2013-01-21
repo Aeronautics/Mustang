@@ -1,0 +1,12 @@
+@import '-normalize/borders.cssl';
+@import '-normalize/colors.cssl';
+@import '-normalize/cursors.cssl';
+@import '-normalize/fonts.cssl';
+@import '-normalize/forms.cssl';
+@import '-normalize/sizing.cssl';
+@import '-normalize/spacing.cssl';
+@import '-normalize/tables.cssl';
+
+-all {
+    -normalize: borders colors cursors fonts forms sizing spacing tables;
+}

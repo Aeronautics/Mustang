@@ -1,16 +1,26 @@
-@import 'mustang/nav-colors.cssl';
+@import '-mustang/nav-colors.cssl';
 
-& {
-    mustang: nav-colors #36F #ddd;
+-selector {
+    -mustang: nav-colors #36F #ddd;
     overflow: auto;
     border-width: 0;
     border-bottom-width: 0.15em;
     border-style: solid;
     padding: 0 0.25em;
     min-height: 2.8em;
+    line-height: 1.7;
 }
 
-& ul, & ol, & dl, & dd, & dt, & li, & form, & fieldset, & label, & fieldset {
+-selector ul, 
+-selector ol, 
+-selector dl, 
+-selector dd, 
+-selector dt, 
+-selector li, 
+-selector form, 
+-selector fieldset, 
+-selector label, 
+-selector fieldset {
     display: inline;
     list-style: none;
     margin: 0;
@@ -19,36 +29,37 @@
     position: relative;
 }
 
-& input[type=text],
-& button,
-& input[type=button] {
+-selector input[type=text],
+-selector button,
+-selector input[type=button] {
     font-size: 1em;
     margin: 0.2em 0.2em 0 0.2em;
     float: none;
 }
 
-& legend {
+-selector legend {
     display: none;
 }
 
-& fieldset {
+-selector fieldset {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
 }
 
-& form, & fieldset {
+-selector form, 
+-selector fieldset {
     display: inline;
 }
 
-& input[type=radio],
-& input[type=checkbox] {
+-selector input[type=radio],
+-selector input[type=checkbox] {
     font-size: 1.2em;
     margin: 0.45em 0.25em 0 0;
 }
 
-& form label,
-& a {
+-selector form label,
+-selector a {
     font-weight: 400;
     margin: 0.25em 0 0 0;
     height: 1.7em;
@@ -57,11 +68,11 @@
     text-decoration: none;
 }
 
-& input[type=submit], 
-& input[type=text], 
-& button,
-& form label,
-& a {
+-selector input[type=submit], 
+-selector input[type=text], 
+-selector button,
+-selector form label,
+-selector a {
     font-size: 1.2em;
     letter-spacing: -0.05em;
     display: inline-block;
@@ -69,17 +80,17 @@
     text-align: center;
 }
 
-& input[type=text] {
+-selector input[type=text] {
     text-align: left;
     padding: 0.35em;
 }
 
-& button,
-& input[type=button] {
+-selector button,
+-selector input[type=button] {
     font-weight: 400;
 }
 
-& a:hover, & label:hover {
+-selector a:hover, -selector label:hover {
     -webkit-border-radius: 0.15em;
     -moz-border-radius: 0.15em;
     border-radius: 0.15em;

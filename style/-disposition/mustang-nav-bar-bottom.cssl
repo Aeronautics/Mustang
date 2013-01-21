@@ -1,4 +1,4 @@
-& {
+-selector {
     border-top-width: 0.15em;
     border-bottom-width: 0;
 }

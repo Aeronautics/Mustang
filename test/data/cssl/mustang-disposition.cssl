@@ -1,8 +1,9 @@
-@import 'disposition/mustang-nav-bar.cssl';
-@import 'typography/ubuntu-web.cssl';
+@import '-disposition/mustang.cssl';
+@import '-typography/ubuntu-web.cssl';
 
-** {
-    typography: ubuntu-web;
+-all {
+    -typography: ubuntu-web;
+    -disposition: mustang;
 }
 
 body {
@@ -10,6 +11,3 @@ body {
     margin: 0 auto;
 }
 
-nav {
-    disposition: mustang-nav-bar;
-}

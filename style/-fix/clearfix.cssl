@@ -1,4 +1,4 @@
-&:after {
+-selector:after {
 	content: ".";
 	display: block;
 	clear: both;
@@ -7,14 +7,14 @@
 	height: 0;
 }
  
-& {
+-selector {
 	display: inline-block;
 }
  
-html[xmlns] & {
+html[xmlns] -selector {
 	display: block;
 }
  
-* html & {
+* html -selector {
 	height: 1%;
 }

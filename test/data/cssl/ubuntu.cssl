@@ -1,5 +1,7 @@
-** {
-    typography: ubuntu-webfont;
+@import '-typography/ubuntu-web-font.cssl';
+
+-all {
+    -typography: ubuntu-webfont;
 }
 body {
     width: 42em;

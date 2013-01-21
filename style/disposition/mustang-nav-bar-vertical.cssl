@@ -1,6 +1,0 @@
-& a, & form label, & input, & button {
-    display: block;
-    text-align: left;
-    font-weight: 300;
-}
-

@@ -1,0 +1,36 @@
+-selector {
+    border-color: -param-1;
+    background: -param-2;
+}
+
+-selector input[type=submit], 
+-selector input[type=text], 
+-selector button,
+-selector form label,
+-selector a,
+-selector a:hover, 
+-selector label:hover {
+    color: -param-0;
+}
+
+-selector button,
+-selector input[type=text],
+-selector input[type=submit] {
+    color: -param-0;
+}
+
+-selector input[type=submit]:focus,
+-selector button:focus {
+    border-color: -param-0;
+}
+
+-selector input[type=text]:focus {
+    border-color: -param-0;
+}
+
+-selector a:hover, 
+-selector label:hover {
+    background-color: -param-1;
+}
+
+

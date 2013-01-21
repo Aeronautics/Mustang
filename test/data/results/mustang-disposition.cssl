@@ -60,18 +60,18 @@ fieldset fieldset {margin: 1em;}
 label + label {margin-left: 0.5em;margin: 0.8em;}
 label {line-height: 1;display: block;margin: 0.8em;}
 input {font-weight: 300;}
-select {font-weight: 300;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
-button {font-weight: 400;margin: 0.5em 1em;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+select {font-weight: 300;border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+button {font-weight: 400;margin: 0.5em 1em;border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
 label input {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;display: block;margin: 0;}
 label select {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;display: block;margin: 0;}
 label textarea {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;display: block;margin: 0;}
 label button {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;}
-input[type=submit] {margin: 0.5em 1em;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;font-weight: 400;}
+input[type=submit] {margin: 0.5em 1em;border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;font-weight: 400;}
 hgroup {overflow: auto;vertical-align: middle;}
 hgroup *:last-child::before {content: "―";padding: 0 0.3em 0 0.2em;color: rgb(68,68,68);font-weight: 300;}
 hgroup *:first-child {display: inline-block;}
 hgroup *:last-child {display: inline-block;color: rgb(68,68,68);font-weight: 300;}
-table input[type=text] {width: auto;margin: 0;padding: 0.3em 0.6em;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+table input[type=text] {width: auto;margin: 0;padding: 0.3em 0.6em;border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
 table td > input[type=checkbox] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
 table td > input[type=radio] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
 table td > input[type=submit] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
@@ -91,10 +91,10 @@ legend strong {font-weight: bold;letter-spacing: 0.01em;}
 caption strong {font-weight: bold;letter-spacing: 0.01em;}
 th strong {font-weight: bold;letter-spacing: 0.01em;}
 mark {padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;background: rgb(255,255,102);}
-input[type=button] {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;font-weight: 400;}
-input[type=text] {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
-textarea {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
-fieldset {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0;border-top-width: 0.15em;border-style: solid;}
+input[type=button] {border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;font-weight: 400;}
+input[type=text] {border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+textarea {border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+fieldset {border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0;border-top-width: 0.15em;border-style: solid;}
 input[type=button]:hover {border-width: 0.1em;border-style: solid;background: rgb(221,221,221);border-color: rgb(221,221,221);}
 input[type=submit]:hover {border-width: 0.1em;border-style: solid;background: rgb(221,221,221);border-color: rgb(221,221,221);}
 button:hover {border-width: 0.1em;border-style: solid;background: rgb(221,221,221);border-color: rgb(221,221,221);}
@@ -119,8 +119,7 @@ a:focus {outline-color: blue;outline-width: 0.1em;outline-style: dotted;}
 a:hover {text-decoration: none;}
 label input[type=checkbox] {float: left;margin: 0 0.3em;}
 label input[type=radio] {float: left;margin: 0 0.3em;}
-body {width: 90%;margin: 0 auto;}
-nav {border-color: rgb(221,221,221);overflow: auto;border-width: 0;border-bottom-width: 0.15em;border-style: solid;padding: 0 0.25em;min-height: 2.8em;}
+nav {border-color: rgb(221,221,221);overflow: auto;border-width: 0;border-bottom-width: 0.15em;border-style: solid;padding: 0 0.25em;min-height: 2.8em;line-height: 1.7;}
 nav input[type=submit] {color: blue;font-size: 1.2em;letter-spacing: -0.05em;display: inline-block;min-width: 2em;text-align: center;}
 nav input[type=text] {color: blue;font-size: 1.2em;margin: 0.2em 0.2em 0 0.2em;float: none;letter-spacing: -0.05em;display: inline-block;min-width: 2em;text-align: left;padding: 0.35em;}
 nav button {color: blue;font-size: 1.2em;margin: 0.2em 0.2em 0 0.2em;float: none;letter-spacing: -0.05em;display: inline-block;min-width: 2em;text-align: center;font-weight: 400;}
@@ -146,10 +145,6 @@ nav input[type=radio] {font-size: 1.2em;margin: 0.45em 0.25em 0 0;}
 nav input[type=checkbox] {font-size: 1.2em;margin: 0.45em 0.25em 0 0;}
 article nav:last-child {border-top-width: 0.15em;border-bottom-width: 0;}
 section nav:last-child {border-top-width: 0.15em;border-bottom-width: 0;}
-aside nav a {display: block;text-align: left;font-weight: 300;}
-aside nav form label {display: block;text-align: left;font-weight: 300;}
-aside nav input {display: block;text-align: left;font-weight: 300;}
-aside nav button {display: block;text-align: left;font-weight: 300;}
 footer nav {border-color: rgb(221,221,221);background: rgb(238,238,238);}
 footer nav input[type=submit] {color: rgb(136,136,136);}
 footer nav input[type=text] {color: rgb(136,136,136);}
@@ -181,3 +176,4 @@ nav dl dd {display: block;padding: 0;margin: 0;font-size: 0.8em;padding-bottom: 
 nav dl dt {display: block;padding: 0;margin: 0;}
 article article nav {text-align: right;}
 section nav {text-align: right;}
+body {width: 90%;margin: 0 auto;}

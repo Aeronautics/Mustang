@@ -1,19 +1,19 @@
-@import 'fix/compat.cssl';
-@import 'normalize/all.cssl';
-@import 'typography/ubuntu.cssl';
-@import 'ubuntu-web/text-colors.cssl'; 
-@import 'ubuntu-web/heading-colors.cssl';
-@import 'ubuntu-web/inline-colors.cssl';
-@import 'ubuntu-web/form-colors.cssl';
-@import 'ubuntu-web/link-colors.cssl';
-@import 'ubuntu-web/table-colors.cssl';
+@import '-fix/compat.cssl';
+@import '-normalize/all.cssl';
+@import '-typography/ubuntu.cssl';
+@import '-ubuntu-web/text-colors.cssl'; 
+@import '-ubuntu-web/heading-colors.cssl';
+@import '-ubuntu-web/inline-colors.cssl';
+@import '-ubuntu-web/form-colors.cssl';
+@import '-ubuntu-web/link-colors.cssl';
+@import '-ubuntu-web/table-colors.cssl';
 
-** {
-    typography: ubuntu;
+-all {
+    -typography: ubuntu;
 }
 
 body {
-    ubuntu-web: text-colors #222;
+    -ubuntu-web: text-colors #222;
 }
 
 h1,
@@ -24,7 +24,7 @@ h5,
 h6,
 hgroup *:last-child,
 hgroup *:last-child::before  {
-    ubuntu-web: heading-colors #111 transparent #444;
+    -ubuntu-web: heading-colors #111 transparent #444;
 }
 
 h1, h2 {
@@ -49,7 +49,7 @@ samp,
 mark,
 abbr,
 q {
-    ubuntu-web: inline-colors #000 #eee #ff6 #999;
+    -ubuntu-web: inline-colors #000 #eee #ff6 #999;
 }
 
 
@@ -62,7 +62,7 @@ button,
 select,
 textarea,
 fieldset {
-    ubuntu-web: form-colors blue #FFF #ccc;
+    -ubuntu-web: form-colors blue transparent #ccc;
 }
 
 input[type=button],
@@ -99,11 +99,11 @@ select:focus,
 textarea:focus {
     border-width: 0.1em;
     border-style: solid;
-    ubuntu-web: form-colors blue #FFF #ddd blue;
+    -ubuntu-web: form-colors blue #FFF #ddd blue;
 }
 
 tr:hover td, th, thead, tfoot {
-    ubuntu-web: table-colors #eee #ddd;
+    -ubuntu-web: table-colors #eee #ddd;
 }
 
 th, 
@@ -140,7 +140,7 @@ optgroup {
 }
 
 a, a:visited, a:focus {
-    ubuntu-web: link-colors blue #555;
+    -ubuntu-web: link-colors blue #555;
 }
 
 a:hover {

@@ -1,5 +1,5 @@
-@import 'fix/compat.cssl';
+@import '-fix/compat.cssl';
 
 article {
-    fix: compat;
+    -fix: compat;
 }

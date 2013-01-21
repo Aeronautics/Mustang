@@ -1,5 +1,5 @@
-@import 'fix/clearfix.cssl';
+@import '-fix/clearfix.cssl';
 
 p {
-    fix: clearfix;
+    -fix: clearfix;
 }

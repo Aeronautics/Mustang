@@ -108,16 +108,16 @@ class Processor
         $blockSelector = $this->getSelectorString($block);
         foreach ($this->library[$libName] as $libBlock) {
             $libSelector = $this->getSelectorString($libBlock);
-            if (false !== strpos($libSelector, '&')) {
+            if (false !== strpos($libSelector, '-selector')) {
                 $newBlock = clone $libBlock;
                 $newBlock->setSelector(
-                    str_replace('&', $blockSelector, $libSelector)
+                    str_replace('-selector', $blockSelector, $libSelector)
                 );
                 $blocks = array_merge(
                     $blocks,
                     $this->processBlock($newBlock, $libValues)
                 );
-            } elseif ('**' === $blockSelector) {
+            } elseif ('-all' === $blockSelector) {
                 $blocks = array_merge(
                     $blocks,
                     $this->processBlock($libBlock, $libValues)
