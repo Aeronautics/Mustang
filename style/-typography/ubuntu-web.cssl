@@ -1,19 +1,19 @@
 @import '-fix/compat.cssl';
 @import '-normalize/all.cssl';
 @import '-typography/ubuntu.cssl';
-@import '-ubuntu-web/text-colors.cssl'; 
-@import '-ubuntu-web/heading-colors.cssl';
-@import '-ubuntu-web/inline-colors.cssl';
-@import '-ubuntu-web/form-colors.cssl';
-@import '-ubuntu-web/link-colors.cssl';
-@import '-ubuntu-web/table-colors.cssl';
+@import '-colorset/ubuntu-web-text.cssl'; 
+@import '-colorset/ubuntu-web-headings.cssl';
+@import '-colorset/ubuntu-web-inline.cssl';
+@import '-colorset/ubuntu-web-forms.cssl';
+@import '-colorset/ubuntu-web-links.cssl';
+@import '-colorset/ubuntu-web-tables.cssl';
 
 -all {
     -typography: ubuntu;
 }
 
 body {
-    -ubuntu-web: text-colors #222;
+    -colorset: ubuntu-web-text #222;
 }
 
 h1,
@@ -24,11 +24,16 @@ h5,
 h6,
 hgroup *:last-child,
 hgroup *:last-child::before  {
-    -ubuntu-web: heading-colors #111 transparent #444;
+    -colorset: ubuntu-web-headings #111 transparent #444;
 }
 
 h1, h2 {
     letter-spacing: -0.03em;
+}
+
+address {
+    display: block;
+    font-style: normal;
 }
 
 code, 
@@ -37,9 +42,9 @@ var,
 samp,
 mark {
     padding: 0.1em 0.2em;
-    -webkit-border-radius: 0.15em;
-    -moz-border-radius: 0.15em;
-    border-radius: 0.15em;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em;
 }
 
 code,
@@ -49,7 +54,7 @@ samp,
 mark,
 abbr,
 q {
-    -ubuntu-web: inline-colors #000 #eee #ff6 #999;
+    -colorset: ubuntu-web-inline #000 #eee #ff6 #999;
 }
 
 
@@ -62,7 +67,7 @@ button,
 select,
 textarea,
 fieldset {
-    -ubuntu-web: form-colors blue transparent #ccc;
+    -colorset: ubuntu-web-forms blue transparent #ccc;
 }
 
 input[type=button],
@@ -76,9 +81,9 @@ textarea {
     border-style: solid;
     padding: 0.3em 0.6em;
     font-size: 1em;
-    -webkit-border-radius: 0.15em;
-    -moz-border-radius: 0.15em;
-    border-radius: 0.15em;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em;
 }
 
 input[type=button],
@@ -99,11 +104,11 @@ select:focus,
 textarea:focus {
     border-width: 0.1em;
     border-style: solid;
-    -ubuntu-web: form-colors blue #FFF #ddd blue;
+    -colorset: ubuntu-web-forms blue #FFF #ddd blue;
 }
 
 tr:hover td, th, thead, tfoot {
-    -ubuntu-web: table-colors #eee #ddd;
+    -colorset: ubuntu-web-tables #eee #ddd;
 }
 
 th, 

@@ -195,6 +195,57 @@ multiple lines if necessary.</p>
         </fieldset>
     </form>
 </nav>
+<h4>Navs inside navs</h4>
+<p>Navigation bars can handle nested navigation beutifully:</p>
+<nav id=nav>
+    <a href="Foo">This</a>
+    <a href="Foo">Nav</a>
+    <a href="Foo">Has</a>
+    <a href="Foo">Another</a>
+    <a href="#subnav">Nav (here)</a>
+    <nav id=subnav>
+        <a href="Foo">Nav</a>
+        <a href="#nav" rel=up>Back to Main nav</a>
+        <a href="Foo">Is</a>
+        <a href="Foo">Inside</a>
+        <a href="Foo">Nav</a>
+        <a href="Foo">Is</a>
+        <a href="Foo">Inside</a>
+        <a href="Foo">Another</a>
+        <a href="Foo">Nav</a>
+        <a href="Foo">Is</a>
+        <a href="Foo">Inside</a>
+        <a href="Foo">Another</a>
+        <a href="Foo">Nav</a>
+        <a href="Foo">Is</a>
+        <a href="Foo">Inside</a>
+        <a href="Foo">Another</a>
+        <a href="Foo">Nav</a>
+        <a href="Foo">Is</a>
+        <a href="Foo">Inside</a>
+        <a href="Foo">Another</a>
+        <a href="Foo">Nav</a>
+        <a href="Foo">Is</a>
+        <a href="Foo">Inside</a>
+        <a href="Foo">Another</a>
+        <a href="Foo">Nav</a>
+        <a href="Foo">Is</a>
+        <a href="Foo">Inside</a>
+        <a href="Foo">Another</a>
+        <a href="Foo">Nav</a>
+        <a href="Foo">Is</a>
+        <a href="Foo">Inside</a>
+        <a href="Foo">Another</a>
+    </nav>
+    <a href="#subnav2">Smaller (here)</a>
+    <nav id=subnav2>
+        <a href="#nav" rel=up>Back to Main nav</a>
+        <a href="Foo">Nav</a>
+        <a href="Foo">Is</a>
+        <a href="Foo">Inside</a>
+        <a href="Foo">Nav</a>
+    </nav>
+</nav>
 <p>Bla</p>
 <h2>For the <strong>header</strong> element</h2>
 A simple header with a heading title and some info:

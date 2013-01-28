@@ -3,28 +3,31 @@
 @import '-disposition/mustang-nav-bar-ordered.cssl';
 @import '-disposition/mustang-nav-bar-split.cssl';
 @import '-disposition/mustang-nav-bar-vertical.cssl';
-@import '-mustang/nav-colors.cssl';
+@import '-colorset/mustang-nav.cssl';
 
 -selector {
     -disposition: mustang-nav-bar-simple;
-    -mustang: nav-colors blue #ddd;
+    -colorset: mustang-nav blue #ddd;
 }
 
 article -selector:last-child, section -selector:last-child {
     -disposition: mustang-nav-bar-bottom;
 }
 
-
 footer -selector {
-    -mustang: nav-colors #888 #ddd #eee;
+    -colorset: mustang-nav #888 #ddd #eee;
 }
 
 header -selector {
-    -mustang: nav-colors blue #ddd #eee;
+    -colorset: mustang-nav blue #ddd #eee;
 }
 
 -selector ol {
     -disposition: mustang-nav-bar-ordered;
+}
+
+-selector ol li a {
+    list-style: decimal inside;
 }
 
 -selector dl {

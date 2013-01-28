@@ -1,13 +1,15 @@
 @import '-disposition/mustang.cssl';
 @import '-typography/ubuntu-web.cssl';
 
--all {
-    -typography: ubuntu-web;
-    -disposition: mustang;
-}
+@media screen {
+    -all {
+        -typography: ubuntu-web;
+        -disposition: mustang;
+    }
 
-body {
-    width: 90%;
-    margin: 0 auto;
+    body {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
 }
-

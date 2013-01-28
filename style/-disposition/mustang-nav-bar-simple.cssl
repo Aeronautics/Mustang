@@ -1,15 +1,77 @@
-@import '-mustang/nav-colors.cssl';
+@import '-colorset/mustang-nav.cssl';
 
 -selector {
-    -mustang: nav-colors #36F #ddd;
+    -colorset: mustang-nav #36F #ddd;
     overflow: auto;
     border-width: 0;
     border-bottom-width: 0.15em;
     border-style: solid;
     padding: 0 0.25em;
-    min-height: 2.8em;
-    line-height: 1.7;
+    line-height: 1;
 }
+
+-selector -selector {
+    display: none;
+}
+
+-selector -selector:target {
+    position: fixed;
+    width: 80%;
+    bottom: 20%;
+    left: 10%;
+    max-height: 50%;
+    background: white;
+    display: block;
+    border-bottom: 3.4em solid white;
+    padding-left: 1em;
+    font-size: 1.2em;
+    box-shadow: 0 0 2em #aaa;
+    padding: 1em 0 0 0;
+    text-align: center;
+}
+
+-selector -selector:target a {
+    display: inline-block;
+    text-align: center;
+    margin: 0.2em 0.4em;
+    width: 45%;
+}
+
+-selector -selector a[rel=up] {
+    font-style: italic;    
+    font-weight: 300;
+    position: fixed;
+    bottom: 20%;
+    right: 11%;
+    width: auto;
+    left: 10%;
+    margin: 0.5em;
+    background: white;
+}
+
+-selector -selector:target a[rel=up]:before {
+    content: "x";
+    position: absolute;
+    top: 0.65em;
+    left: 0.8em;
+    font-style: normal;
+    background: transparent;
+    display: block;
+    width: 0.8em;
+    height: 0.7em;
+    line-height: 0.53;
+    font-weight: bold;
+    color: #aaa;
+}
+-selector -selector:target a[rel=up]:hover {
+    background: #ddd;
+}
+-selector -selector:target a:hover:before {
+    color: white;
+    border-color: transparent;
+}
+
+
 
 -selector ul, 
 -selector ol, 
@@ -61,7 +123,7 @@
 -selector form label,
 -selector a {
     font-weight: 400;
-    margin: 0.25em 0 0 0;
+    margin: 0.25em 0 0.25em 0;
     height: 1.7em;
     line-height: 1.7;
     padding: 0.1em 0.6em;
@@ -80,9 +142,17 @@
     text-align: center;
 }
 
+-selector input[type=button], 
+-selector button {
+    line-height: 1.1em;
+    max-height: 1.9em;
+}
+
 -selector input[type=text] {
     text-align: left;
     padding: 0.35em;
+    height: 1em;
+    margin-bottom: 0.2em;
 }
 
 -selector button,
@@ -91,9 +161,9 @@
 }
 
 -selector a:hover, -selector label:hover {
-    -webkit-border-radius: 0.15em;
-    -moz-border-radius: 0.15em;
-    border-radius: 0.15em;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em;
 }
 
 

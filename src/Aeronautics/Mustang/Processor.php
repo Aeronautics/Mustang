@@ -63,6 +63,22 @@ class Processor
                 foreach ($blocks as $b) {
                     $this->output->append($b);
                 }
+            } elseif ($content instanceof MediaQuery) {
+                $media = new MediaQuery;
+                $media->setQuery($content->getQuery());
+                foreach ($content->getContents() as $content) {
+                    $blocks = array();
+                    foreach ($this->expandBlock($content) as $block) {
+                        foreach ($this->processBlock($block) as $b) {
+                            $blocks[] = $b;
+                        }
+                    }
+                    $blocks = $this->compress($blocks);
+                    foreach ($blocks as $b) {
+                        $media->append($b);
+                    }
+                }
+                $this->output->append($media);
             }
         }
         print $this->output;

@@ -18,10 +18,6 @@
     column-rule-width: 0.1em;
 }
 
--selector ol, -selector ul {
-    font-size: 1em;
-}
-
 -selector a {
     font-style: normal;
     padding-left: 0.6em;
@@ -29,11 +25,8 @@
     display: inline;
     float: none;
     text-align: left;
+    display: list-item;
+    list-style: none;
 }
 
--selector li {
-    margin-left: 0.6em;
-    display: list-item;
-    list-style: decimal inside;
-}
 

@@ -8,11 +8,11 @@ h3 {font-weight: 400;font-size: 1.19em;color: rgb(17,17,17);background: transpar
 h4 {font-weight: 400;font-size: 1em;color: rgb(17,17,17);background: transparent;}
 h5 {font-size: 0.9em;margin: 1.3em 0;font-weight: 400;letter-spacing: 0.1em;color: rgb(17,17,17);background: transparent;}
 h6 {font-size: 0.85em;margin: 1.3em 0;font-weight: 400;letter-spacing: 0.15em;color: rgb(17,17,17);background: transparent;}
-code {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;color: rgb(0,0,0);background: rgb(238,238,238);}
-kbd {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;color: rgb(0,0,0);background: rgb(238,238,238);}
+code {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;color: rgb(0,0,0);background: rgb(238,238,238);}
+kbd {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;color: rgb(0,0,0);background: rgb(238,238,238);}
 pre {font-family: Ubuntu Mono;font-size: 1em;}
-samp {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;color: rgb(0,0,0);background: rgb(238,238,238);}
-var {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;color: rgb(0,0,0);background: rgb(238,238,238);}
+samp {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;color: rgb(0,0,0);background: rgb(238,238,238);}
+var {font-family: Ubuntu Mono;font-size: 1em;padding: 0.1em 0.2em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;color: rgb(0,0,0);background: rgb(238,238,238);}
 ul {list-style: disc;}
 li {margin: 0.5em 0;}
 ul ul {font-size: 0.88em;}
@@ -60,18 +60,18 @@ fieldset fieldset {margin: 1em;}
 label + label {margin-left: 0.5em;margin: 0.8em;}
 label {line-height: 1;display: block;margin: 0.8em;}
 input {font-weight: 300;}
-select {font-weight: 300;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
-button {font-weight: 400;margin: 0.5em 1em;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+select {font-weight: 300;border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;}
+button {font-weight: 400;margin: 0.5em 1em;border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;}
 label input {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;display: block;margin: 0;}
 label select {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;display: block;margin: 0;}
 label textarea {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;display: block;margin: 0;}
 label button {vertical-align: middle;padding: 0.2em;margin-bottom: 0.1em;}
-input[type=submit] {margin: 0.5em 1em;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;font-weight: 400;}
+input[type=submit] {margin: 0.5em 1em;border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;font-weight: 400;}
 hgroup {overflow: auto;vertical-align: middle;}
 hgroup *:last-child::before {content: "―";padding: 0 0.3em 0 0.2em;color: rgb(68,68,68);font-weight: 300;}
 hgroup *:first-child {display: inline-block;}
 hgroup *:last-child {display: inline-block;color: rgb(68,68,68);font-weight: 300;}
-table input[type=text] {width: auto;margin: 0;padding: 0.3em 0.6em;border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
+table input[type=text] {width: auto;margin: 0;padding: 0.3em 0.6em;border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;font-size: 1em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;}
 table td > input[type=checkbox] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
 table td > input[type=radio] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
 table td > input[type=submit] {max-width: 100%;min-width: 70%;margin: 0 auto;display: block;}
@@ -90,11 +90,12 @@ h5 strong {font-weight: bold;letter-spacing: 0.01em;}
 legend strong {font-weight: bold;letter-spacing: 0.01em;}
 caption strong {font-weight: bold;letter-spacing: 0.01em;}
 th strong {font-weight: bold;letter-spacing: 0.01em;}
-mark {padding: 0.1em 0.2em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;background: rgb(255,255,102);}
-input[type=button] {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;font-weight: 400;}
-input[type=text] {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
-textarea {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.15em;-moz-border-radius: 0.15em;border-radius: 0.15em;}
-fieldset {border-color: rgb(204,204,204);color: blue;background-color: rgb(255,255,255);border-width: 0;border-top-width: 0.15em;border-style: solid;}
+address {display: block;font-style: normal;}
+mark {padding: 0.1em 0.2em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;background: rgb(255,255,102);}
+input[type=button] {border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;font-weight: 400;}
+input[type=text] {border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;}
+textarea {border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0.1em;border-style: solid;padding: 0.3em 0.6em;font-size: 1em;-webkit-border-radius: 0.2em;-moz-border-radius: 0.2em;border-radius: 0.2em;}
+fieldset {border-color: rgb(204,204,204);color: blue;background-color: transparent;border-width: 0;border-top-width: 0.15em;border-style: solid;}
 input[type=button]:hover {border-width: 0.1em;border-style: solid;background: rgb(221,221,221);border-color: rgb(221,221,221);}
 input[type=submit]:hover {border-width: 0.1em;border-style: solid;background: rgb(221,221,221);border-color: rgb(221,221,221);}
 button:hover {border-width: 0.1em;border-style: solid;background: rgb(221,221,221);border-color: rgb(221,221,221);}
@@ -113,9 +114,9 @@ tfoot th {border: 0;}
 q:after {font-size: 1.1em;position: relative;top: 0.08em;}
 q:before {font-size: 1.1em;position: relative;top: 0.08em;}
 optgroup {font-weight: 400;}
-a {color: blue;}
-a:visited {color: rgb(85,85,85);}
-a:focus {outline-color: blue;outline-width: 0.1em;outline-style: dotted;}
+a {-ubuntu-web: link-colors blue rgb(85,85,85);}
+a:visited {-ubuntu-web: link-colors blue rgb(85,85,85);}
+a:focus {-ubuntu-web: link-colors blue rgb(85,85,85);outline-width: 0.1em;outline-style: dotted;}
 a:hover {text-decoration: none;}
 label input[type=checkbox] {float: left;margin: 0 0.3em;}
 label input[type=radio] {float: left;margin: 0 0.3em;}
